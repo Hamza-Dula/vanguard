@@ -1,0 +1,126 @@
+.control-panel-colibri_panel {
+
+  li.control-section-colibri_section {
+    border: 1px solid #ddd;
+    color: #555d66;
+
+    > .accordion-section-title {
+      &:after {
+        content: "\f111";
+      }
+    }
+
+    margin-bottom: 6px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    &.open {
+      &:not(.control-panel-nav_menus) {
+        border: 1px solid #569fc2;
+        border-left: none;
+      }
+
+    }
+
+  }
+}
+
+#colibri-customizer-main-section-content {
+  overflow-x: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 46px;
+  bottom: 46px;
+  left: 0;
+  right: 0;
+
+  #colibri-main-section-content {
+    transform: translateX(100%);
+    transition: 0.18s transform cubic-bezier(0.645, 0.045, 0.355, 1);
+    pointer-events: all;
+    position: absolute;
+    padding-left: 0px;
+    padding-right: 0px;
+    top: 0;
+    height: 100%;
+    overflow-x: hidden;
+
+    li.section-meta {
+      margin-bottom: 12px;
+    }
+
+    &.open {
+      transform: translateX(0);
+
+      .customize-control {
+        .customize-control-title {
+          font-size: 13px;
+        }
+
+        &.customize-control-image {
+          .remove-button {
+            display: none;
+          }
+        }
+
+        .attachment-media-view .placeholder {
+          background: #f7f7f7;
+          line-height: 180px;
+        }
+
+      }
+
+    }
+
+    .customize-pane-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      height: 0;
+      max-height: none;
+      overflow: hidden;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: 0.4s transform linear;
+
+      &.open {
+        transition-delay: 0.2s;
+        border-bottom: 1px solid #eee;
+        visibility: visible;
+        height: auto;
+        overflow: auto;
+        background: #fff;
+      }
+
+    }
+
+    .accordion-section-content {
+      display: block;
+      overflow-x: hidden;
+      padding: 12px;
+      background: transparent;
+
+      .control-in-other-tab {
+        display: none !important;
+      }
+
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+

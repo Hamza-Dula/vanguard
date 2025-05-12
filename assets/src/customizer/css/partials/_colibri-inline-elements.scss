@@ -1,0 +1,54 @@
+.h-row,
+.inline-elements-container {
+
+  .h-col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .inline-element {
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+
+    .customize-control-title {
+      color: #4a4a4a;
+      font-size: 13px;
+      font-weight: 500;
+      margin: 0;
+      line-height: 1;
+    }
+
+    &.fit {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: none;
+    }
+  }
+}
+
+[data="controls-holder"] {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-height: 500px;
+  overflow: auto;
+  @import "el-overrides";
+  .inline-element {
+    min-height: 40px;
+  }
+}
+
+
+
+
+
+
+

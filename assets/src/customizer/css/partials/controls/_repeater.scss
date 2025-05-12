@@ -1,0 +1,65 @@
+&colibri-repeater {
+
+  .sortable-ghost {
+    opacity: 0.5!important;
+  }
+
+
+  .el-collapse {
+    width: 100%;
+    display: block;
+  }
+
+  .el-collapse-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 4px;
+    border: 1px solid #bebebe;
+  }
+
+
+
+  .el-collapse-item__header {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &.is-active {
+      background: #eeeeee;
+    }
+  }
+
+  .el-collapse-item__content {
+    padding-bottom: 0;
+  }
+
+  .el-collapse-item__wrap {
+    padding: 10px;
+  }
+
+
+
+  ul {
+    &.field-data {
+      width: 100%;
+    }
+
+    .field-label {
+      font-weight: 600;
+    }
+
+    &.items-list-list {
+      width: 100%;
+      > li {
+        border: 1px solid;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

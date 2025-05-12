@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project default="default" name="Monivo Theme">
+	<property description="System environment variables" environment="env" />
+	<!-- PROPERTIES -->
+	<property name="build_number" value="1.0.${env.BUILD_NUMBER}" />
+	<property name="zip_root_folder" value="monivo" />
+	<property name="source_dir" value="${env.WORKSPACE}/repo/theme" />
+	<property name="build_dir" value="${env.WORKSPACE}/build" />
+	<property name="build_compose" value="${env.WORKSPACE}/compose" />
+	<property name="build_compose_root" value="${build_compose}/${zip_root_folder}" />
+	<property name="zip_dir" value="${env.WORKSPACE}/zip" />
+	<!-- TARGETS -->
+	<target description="Prepare Build" name="prepare">
+		<delete quiet="false" failonerror="false" verbose="false">
+			<fileset dir="${build_dir}">
+				<exclude name="**/*node_modules/**" />
+			</fileset>
+		</delete>
+		<delete quiet="false" failonerror="false" verbose="false" dir="${zip_dir}" />
+		<mkdir dir="${zip_dir}" />
+		<delete quiet="false" failonerror="false" verbose="false" dir="${build_compose}" />
+		<mkdir dir="${build_compose}" />
+	</target>
+	<target description="Copy Source" name="copy_source">
+		<copy verbose="false" todir="${build_dir}">
+			<fileset dir="${source_dir}">
+				<exclude name="**/*.svn" />
+				<exclude name=".vscode\**" />
+			</fileset>
+		</copy>
+		<copy verbose="false" todir="${build_dir}/kubio-plugin">
+			<fileset dir="${env.WORKSPACE}/repo/kubio-plugin">
+				<exclude name="**/*.svn" />
+				<exclude name=".vscode\**" />
+			</fileset>
+		</copy>
+	</target>
+	<target description="Run NPM" name="run_npm">
+		<exec executable="npm" failonerror="true">
+			<arg value="--prefix" />
+			<arg value="${build_dir}" />
+			<arg value="install" />
+		</exec>
+		<exec executable="npm" failonerror="true">
+			<arg value="--prefix" />
+			<arg value="${build_dir}" />
+			<arg value="run" />
+			<arg value="build" />
+		</exec>
+	</target>
+	<target description="Run PHP Composer" name="run_composer">
+		<exec executable="composer" failonerror="true">
+			<arg value="install" />
+			<arg value="--no-dev" />
+			<arg value="--verbose" />
+			<arg value="--optimize-autoloader" />
+			<arg value="-d" />
+			<arg value="${build_dir}" />
+		</exec>
+	</target>
+	<target description="Compose" name="compose">
+		<copy verbose="true" todir="${build_compose_root}">
+			<fileset dir="${build_dir}">
+				<!-- DEFAULTS -->
+				<exclude name="**/*.svn" />
+				<exclude name="**/*.idea" />
+				<exclude name="**/**/.vscode" />
+				<exclude name=".vscode\**" />
+				<exclude name="**/*.env.example" />
+				<exclude name="**/*.todo" />
+				<exclude name="**/*.nvmrc" />
+				<exclude name="**/*node_modules/**" />
+				<exclude name="**/*build.xml" />
+				<exclude name="**/*phpcs.xml" />
+				<exclude name="**/*.map" />
+				<exclude name="**/*.gitignore" />
+				<exclude name="**/*.gitattributes" />
+				<exclude name="**/*package.json" />
+				<exclude name="**/*package-lock.json" />
+				<exclude name="**/*mix-manifest.json" />
+				<exclude name="**/*webpack.mix.json" />
+				<exclude name="**/webpack.conf.js" />
+				<exclude name="**/webpack.mix.js" />
+				<exclude name="**/env" />
+				<exclude name="**/env.example" />
+				<exclude name="**/*composer.json" />
+				<exclude name="**/*composer.lock" />
+				<!-- BUILD CUSTOM -->
+				<exclude name="**/*assets/**" />
+				<exclude name="**/*etc/**" />
+				<exclude name="**/*kubio-plugin/" />
+			</fileset>
+		</copy>
+		<replace file="${build_compose_root}/style.css" token="@@build@@" value="${build_number}" />
+		<fixcrlf srcdir="${build_compose_root}" includes="**/*.php **/*.css **/*.js  **/README*" eol="unix" eof="asis" />
+	</target>
+	<target description="Pack" name="pack">
+		<pathconvert property="zip-file-name">
+			<path path="${env.JOB_NAME}" />
+			<chainedmapper>
+				<flattenmapper />
+				<scriptmapper language="javascript">
+					self.addMappedName(source.toLowerCase().split(' ').join('-'));
+				</scriptmapper>
+			</chainedmapper>
+		</pathconvert>
+		<zip destfile="${zip_dir}/${zip-file-name}-v${build_number}.zip">
+			<zipfileset dir="${build_compose}">
+				<include name="${zip_root_folder}/**/**">
+				</include>
+			</zipfileset>
+		</zip>
+	</target>
+	<target description="Default target" name="default" depends="prepare,copy_source,run_npm,run_composer,compose,pack" />
+	<!-- <target description="Default target" name="default" depends="prepare,copy_source,compose,pack"/> -->
+</project>
+
+
+
+
+
+
+
+

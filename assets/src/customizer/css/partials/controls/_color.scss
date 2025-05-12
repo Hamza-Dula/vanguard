@@ -1,0 +1,27 @@
+&colibri-color{
+  .el-color-picker__icon.el-icon-arrow-down{
+    display: none;
+  }
+  .el-color-picker__trigger{
+    width: 56px;
+    height: 32px;
+    padding: 1px;
+    border-color:#dcdfe6;
+    &:hover{
+      border-color: #1989fa;
+    }
+    .el-color-picker__color{
+      border: none;
+      .el-color-picker__color-inner{
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

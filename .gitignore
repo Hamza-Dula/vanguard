@@ -1,0 +1,14 @@
+node_modules
+!.gitignore
+
+composer.lock
+.env
+.history
+.todo
+.idea
+style.css
+resources/
+vendor/
+*.todo
+vendor
+out.txt

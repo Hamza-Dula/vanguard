@@ -1,0 +1,119 @@
+{
+  "phpSniffer.autoDetect": true,
+  "phpSniffer.standard": "./phpcs.xml",
+  "php.suggest.basic": false,
+  "intelephense.format.enable": false,
+  "intelephense.completion.insertUseDeclaration": true,
+  "editor.quickSuggestions": { "comments": true },
+  "[php]": {
+    "editor.defaultFormatter": "wongjn.php-sniffer",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "files.eol": "\n",
+  "eslint.format.enable": true,
+  "search.exclude": {
+    "**/build": true,
+    "**/build-module": true,
+    "**/build-style": true,
+    "**/resources": true,
+    "style.css": true
+  },
+  "css.lint.duplicateProperties": "warning",
+  "less.lint.duplicateProperties": "warning",
+  "scss.lint.duplicateProperties": "warning",
+  "vscOrganizeImports.formatOnSave": false,
+  "intelephense.environment.includePaths": [
+    "../../../wp-includes",
+    "../../plugins/woocommerce",
+    "../../../wp-admin"
+  ],
+  "intelephense.environment.phpVersion": "7.1.3",
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "wordpress"
+  ]
+}
+
+
+
+
+
+
+
+

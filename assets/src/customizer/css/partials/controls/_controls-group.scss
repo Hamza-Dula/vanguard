@@ -1,0 +1,35 @@
+&colibri-controls-group {
+
+  .el-icon-setting {
+    font-size: 20px;
+  }
+  button.el-popover__reference {
+    padding: 0;
+    margin-right: 0px;
+    line-height: 1;
+    margin-left: 10px;
+  }
+  [data-name="vue-mount-point"] {
+    align-items: center;
+    height: 20px;
+  }
+  &.inline-element {
+    height: 20px;
+  }
+  [data-name="vue-mount-point"] {
+    .popover-toggler {
+      padding: 0px;
+      margin-left: 10px;
+      &.is-disabled {
+        color: #c1c1c1;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

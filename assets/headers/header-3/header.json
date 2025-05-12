@@ -1,0 +1,110 @@
+{
+  "front-header.buttons.show": true,
+  "front-header.buttons.style.textAlign": "left",
+  "front-header.header-menu.style.descendants.innerMenu.justifyContent": "center",
+  "front-header.buttons.value": [
+    {
+      "label": "DISCOVER",
+      "url": "#",
+      "button_type": "0",
+      "index": 0
+    },
+    {
+      "label": "TRY TODAY",
+      "url": "#",
+      "button_type": "1",
+      "index": 1
+    }
+  ],
+  "front-header.header-menu.props.hoverEffect.group.border.transition": "effect-borders-grow grow-from-left",
+  "front-header.header-menu.props.hoverEffect.type": "bordered-active-item bordered-active-item--bottom",
+  "front-header.hero.full_height": true,
+  "front-header.hero.hero_column_width": 100,
+  "front-header.hero.image.localProps.url": "",
+  "front-header.hero.image.props.enabledFrameOption": false,
+  "front-header.hero.image.props.frame.type": "border",
+  "front-header.hero.image.props.showFrameOverImage": true,
+  "front-header.hero.image.props.showFrameShadow": false,
+  "front-header.hero.image.style.descendants.frameImage.backgroundColor": "rgba(255, 255, 255, 1)",
+  "front-header.hero.image.style.descendants.frameImage.height": 100,
+  "front-header.hero.image.style.descendants.frameImage.thickness": 10,
+  "front-header.hero.image.style.descendants.frameImage.transform.translate.x_value": 10,
+  "front-header.hero.image.style.descendants.frameImage.transform.translate.y_value": 10,
+  "front-header.hero.image.style.descendants.frameImage.width": 100,
+  "front-header.hero.image.style.descendants.image.boxShadow.enabled": false,
+  "front-header.hero.image.style.descendants.image.boxShadow.layers.0.blur": 0,
+  "front-header.hero.image.style.descendants.image.boxShadow.layers.0.color": "#000000",
+  "front-header.hero.image.style.descendants.image.boxShadow.layers.0.spread": 20,
+  "front-header.hero.image.style.descendants.image.boxShadow.layers.0.x": 0,
+  "front-header.hero.image.style.descendants.image.boxShadow.layers.0.y": 0,
+  "front-header.hero.props.heroSection.layout": "textOnly",
+  "front-header.hero.style.descendants.outer.background.color": "rgba(255,255,255,0.5)",
+  "front-header.hero.style.descendants.outer.background.image.0.attachment": "fixed",
+  "front-header.hero.style.descendants.outer.background.image.0.position": "top left",
+  "front-header.hero.style.descendants.outer.background.image.0.source.gradient.angle": "0",
+  "front-header.hero.style.descendants.outer.background.image.0.source.gradient.name": "night_fade",
+  "front-header.hero.style.descendants.outer.background.image.0.source.gradient.steps.0.color": "#a18cd1",
+  "front-header.hero.style.descendants.outer.background.image.0.source.gradient.steps.0.position": "0",
+  "front-header.hero.style.descendants.outer.background.image.0.source.gradient.steps.1.color": "#fbc2eb",
+  "front-header.hero.style.descendants.outer.background.image.0.source.gradient.steps.1.position": "100",
+  "front-header.hero.style.descendants.outer.background.image.0.source.url": "%s/images/51854277936_91eb700b8e_c.jpg",
+  "front-header.hero.style.descendants.outer.background.overlay.color.value": "rgba(24,115,213,0.79)",
+  "front-header.hero.style.descendants.outer.background.overlay.gradient": {
+    "steps": [
+      {
+        "color": "#a18cd1",
+        "position": "0"
+      },
+      {
+        "color": "#fbc2eb",
+        "position": "100"
+      }
+    ],
+    "name": "night_fade",
+    "angle": "0"
+  },
+  "front-header.hero.style.descendants.outer.background.overlay.gradient.angle": "0",
+  "front-header.hero.style.descendants.outer.background.overlay.gradient.name": "night_fade",
+  "front-header.hero.style.descendants.outer.background.overlay.gradient.steps.0.color": "#a18cd1",
+  "front-header.hero.style.descendants.outer.background.overlay.gradient.steps.0.position": "0",
+  "front-header.hero.style.descendants.outer.background.overlay.gradient.steps.1.color": "#fbc2eb",
+  "front-header.hero.style.descendants.outer.background.overlay.gradient.steps.1.position": "100",
+  "front-header.hero.style.descendants.outer.background.overlay.gradient_opacity": 85,
+  "front-header.hero.style.descendants.outer.background.overlay.light": 100,
+  "front-header.hero.style.descendants.outer.background.overlay.shape.isTile": false,
+  "front-header.hero.style.descendants.outer.background.overlay.shape.value": "10degree-stripes",
+  "front-header.hero.style.descendants.outer.background.overlay.type": "color",
+  "front-header.hero.style.descendants.outer.background.slideshow.duration.value": 1500,
+  "front-header.hero.style.descendants.outer.background.slideshow.speed.value": 500,
+  "front-header.hero.style.descendants.outer.background.type": "image",
+  "front-header.hero.style.descendants.outer.background.video.externalUrl": "https://www.youtube.com/watch?v=xXRy-JQ8G0Y",
+  "front-header.hero.style.descendants.outer.background.video.internalUrl": "%s/../videos/demo-video.mp4",
+  "front-header.hero.style.descendants.outer.background.video.poster.url": "%s/../images/demo-video-cover.jpg",
+  "front-header.hero.style.descendants.outer.background.video.videoType": "external",
+  "front-header.hero.style.descendants.outer.separators.separatorBottom.color": "rgba(255,255,255,1)",
+  "front-header.hero.style.descendants.outer.separators.separatorBottom.enabled": true,
+  "front-header.hero.style.descendants.outer.separators.separatorBottom.height.value": 220,
+  "front-header.hero.style.descendants.outer.separators.separatorBottom.negative": false,
+  "front-header.hero.style.descendants.outer.separators.separatorBottom.type": "tilt",
+  "front-header.hero.style.padding.bottom.value": 100,
+  "front-header.hero.style.padding.top.value": 100,
+  "front-header.icon_list.show": true,
+  "front-header.logo.props.layoutType": "text",
+  "front-header.navigation.props.showTopBar": false,
+  "front-header.navigation.style.padding.top.unit": "px",
+  "front-header.navigation.style.padding.top.value": 20,
+  "front-header.social_icons.show": true,
+  "front-header.subtitle.localProps.content": "Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum consetetur. Viderer feugiat at pro, mea aperiam.",
+  "front-header.subtitle.show": true,
+  "front-header.subtitle.style.descendants.text.textAlign": "left",
+  "front-header.title.localProps.content": "Discover Our Coffee Blends",
+  "front-header.title.show": true,
+  "front-header.title.style.descendants.text.textAlign": "left"
+}
+
+
+
+
+
+
+

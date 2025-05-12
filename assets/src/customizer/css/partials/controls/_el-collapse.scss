@@ -1,0 +1,37 @@
+&colibri-repeater {
+  .el-collapse {
+    border: 0px;
+    .el-collapse-item {
+      border: 1px solid #dcdfe6;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      div[role=tab] {
+        margin-bottom: 0 !important;
+        div[role=button] {
+          border:0px;
+          padding-right: 10px !important;
+          font-size: 14px;
+          font-weight: 500;
+          height: 40px;
+          line-height: 40px;
+          color: #131313;
+        }
+      }
+      div[role="tabpanel"]{
+        @import '../control/input.scss';
+        @import '../control/select.scss';
+      }
+    }
+    .el-collapse-item__header.is-active {
+      background: rgb(231,240,252);
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+&colibri-gradient {
+  .web-gradient {
+    padding-top: 60%;
+    width: 100%;
+    border: 3px solid #dddddd;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  ul.gradients-list {
+    width: 100%;
+
+    li {
+
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+
+      &.selected .web-gradient {
+        border-color: #0084b9;
+        position: relative;
+
+        //&:before {
+        //  position: absolute;
+        //  content: " ";
+        //  top: 0px;
+        //  right: 0px;
+        //  width: 0;
+        //  height: 0;
+        //  border-style: solid;
+        //  border-width: 0 30px 30px 0;
+        //  border-color: transparent #0084b9 transparent transparent;
+        //}
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

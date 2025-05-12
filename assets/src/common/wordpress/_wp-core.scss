@@ -1,0 +1,140 @@
+$text-margin-bottom: '16px';
+
+#wpadminbar {
+  &:before,
+  & *:before {
+    display: block;
+    width: unset;
+    height: unset;
+    box-sizing: content-box;
+  }
+
+  .admin-bar-search .ab-item,
+  form {
+    &:before {
+      content: initial;
+    }
+  }
+
+  text-align: initial;
+
+  .ab-sub-wrapper ul {
+    display: block;
+  }
+
+}
+
+#wp-toolbar ul {
+  display: inline-block;
+}
+
+.sticky {
+  font-family: inherit;
+}
+
+.gallery-caption {
+  font-family: inherit;
+}
+
+.bypostauthor {
+  font-family: inherit;
+}
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin-bottom: $text-margin-bottom;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin-bottom: $text-margin-bottom;
+}
+
+.wp-caption.alignleft {
+  margin-bottom: $text-margin-bottom;
+}
+
+.wp-caption.alignright {
+  margin-bottom: $text-margin-bottom;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 0.6em;
+  line-height: 150%;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+.fancybox-container {
+  z-index: 100000 !important;
+}
+
+.fancybox-container .fancybox-slide--iframe .fancybox-content{
+  max-height: 100% !important;
+}
+
+.embed-container,
+.embed-youtube {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 1rem;
+
+  > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mejs-inner .mejs-button {
+  > button[aria-controls] {
+    min-width: 10px;
+    width: 20px;
+    display: block;
+    padding: 0px;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    transition: none;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+

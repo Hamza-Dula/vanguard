@@ -1,0 +1,68 @@
+.colibri-customizer-overlay {
+  position: fixed;
+  z-index: 10000000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(19, 94, 150, 0.4);
+  display: none;
+}
+
+.colibri-customizer-overlay-message {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background: #ffffff;
+  margin-top: 16px;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #135e96;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.colibri-customizer-overlay-loader {
+  --dimension: 50px;
+  --border-width: 4px;
+
+  display: inline-block;
+  border: var(--border-width) solid #fff;
+  border-top: var(--border-width) solid #135e96;
+  border-radius: 50%;
+  width: var(--dimension);
+  height: var(--dimension);
+  outline: calc(var(--border-width) / 2) solid #fff;
+  outline-offset: -1px;
+  box-shadow: inset 0px 0px 0px calc(var(--border-width) / 2) #fff;
+  animation: colibri-adminspin 2s linear infinite;
+}
+
+.colibri-customizer-overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes colibri-adminspin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+

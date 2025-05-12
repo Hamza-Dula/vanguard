@@ -1,0 +1,80 @@
+&colibri-slider {
+  .el-slider {
+    width: calc(100% - 15px);
+  }
+  .el-input-number.is-controls-right {
+    [class*=increase], [class*=decrease] {
+      width: 16px;
+    }
+    .el-input__inner {
+      padding-left: 8px;
+      padding-right: 20px;
+    }
+  }
+  [data-name="vue-mount-point"] .inline-elements-container {
+    width: 100%;
+  }
+  .el-slider__runway {
+    background-color: #c1c1c1;
+    height: 4px;
+    cursor: default
+  }
+  .el-slider__bar {
+    height: 4px;
+  }
+  .el-slider__button.el-tooltip {
+    width: 14px;
+    height: 14px;
+  }
+  .el-slider__button:hover {
+    transform: none;
+  }
+  .el-input-number {
+    width: 60px;
+    height: 32px;
+    font-size: 12px;
+    .el-input-number__decrease {
+      bottom: 6px;
+    }
+    .el-input-number__increase {
+      top: 6px;
+    }
+    .el-input-number__increase, .el-input-number__decrease {
+      display: none;
+      cursor: default;
+      right: 5px;
+      width: 13px !important;
+      height: 10px;
+      i {
+        display: flex;
+        background-color: #f0f0f0;
+        transform: none !important;
+        height: 10px;
+        color:black;
+        &:before {
+          color: unset;
+          font-size:10px;
+        }
+        &:hover {
+          background-color: grey;
+        }
+        &:active {
+          background-color: #515151;
+          color:white;
+        }
+      }
+    }
+    &:hover {
+      .el-input-number__increase, .el-input-number__decrease {
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

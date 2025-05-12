@@ -1,0 +1,379 @@
+body {
+  background-color: white;
+}
+
+@import "../../common/wordpress";
+@import "../../common/normalize";
+@import "@kubio/base-styles/bem";
+@import "@kubio/base-styles/variables";
+@import "@kubio/base-styles/mixins";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+[class*="style-"],
+[class*="local-style-"],
+.h-global-transition,
+.h-global-transition-all * {
+  transition-property: $theme-transition-properties;
+}
+
+.white-space {
+  &-nowrap {
+    white-space: nowrap;
+  }
+}
+
+.new-stacking-context {
+  position: relative;
+  z-index: 1;
+}
+
+.#{$library-prefix}svg-icon {
+  line-height: 0;
+  display: inline-block;
+  fill: currentColor;
+  box-sizing: content-box;
+}
+
+.hide {
+  display: none;
+}
+
+.mw-100 {
+  max-width: 100%;
+}
+
+.mh-100 {
+  max-height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.z-index-zero {
+  z-index: 0;
+}
+
+/** background wrapper layers START*/
+.background-layer-media-container-lg {
+  display: block;
+}
+
+.background-layer-media-container-md {
+  display: none;
+}
+
+.background-layer-media-container {
+  display: none;
+}
+
+//used for height control to compute the content height
+.height-auto-forced {
+  height: auto !important;
+  min-height: unset !important;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .background-layer-media-container-md {
+    display: block;
+  }
+
+  .background-layer-media-container-lg {
+    display: none;
+  }
+  .background-layer-media-container {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .background-layer-media-container {
+    display: block;
+  }
+
+  .background-layer-media-container-lg {
+    display: none;
+  }
+
+  .background-layer-media-container-md {
+    display: none;
+  }
+}
+
+/** background wrapper layers END*/
+
+/** background video css start*/
+div.cp-video-bg {
+  background-color: #000000;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  z-index: -3;
+
+  width: 100%;
+  margin-top: 0;
+  top: 0px;
+  -webkit-transform: translate3d(0, 0, -2px);
+}
+
+.cp-video-bg {
+  background-color: transparent !important;
+  overflow: hidden;
+}
+
+div.cp-video-bg .wp-custom-header-video {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  transition: opacity 0.4s cubic-bezier(0.44, 0.94, 0.25, 0.34);
+}
+
+div.cp-video-bg button.wp-custom-header-video-button {
+  display: none;
+}
+
+.background-video-youtube-blocker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+/** background video css end */
+
+/** manage styles css start*/
+
+.h-overflow-visible {
+  overflow: visible;
+}
+
+.h-overflow-hidden {
+  overflow: hidden;
+}
+
+/** manage styles css end*/
+
+.section-option-submenu-hidden {
+  display: none;
+}
+
+.h-ignore-global-body-typography {
+  font-family: "Roboto", sans-serif;
+  font-size: initial;
+  line-height: initial;
+  color: initial;
+  letter-spacing: initial;
+  font-style: initial;
+}
+
+.kubio-theme-nav-full-width {
+  .h-section-grid-container,
+  .h-section-boxed-container,
+  .wp-block-kubio-navigation-section__nav {
+    max-width: unset;
+    padding: 0;
+
+    @media (max-width: 767px) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 1023px) {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+.content.page-content {
+  position: relative;
+}
+
+.shape-layer {
+  background-size: cover;
+}
+
+:root {
+  --kubio-gap-fallback-half: 20;
+}
+
+body {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    > a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.wp-block-kubio-hero {
+  [class*="h-row"] {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.wp-block-kubio-iconlist {
+  .customize-partial-edit-shortcut {
+    right: -40px !important;
+    top: -5px !important;
+  }
+}
+
+.wp-block-kubio-navigation-top-bar .wp-block-kubio-social-icons {
+  a:last-of-type span {
+    //margin-right: -5px !important;
+  }
+}
+
+.wp-block-kubio-image {
+  .customize-partial-edit-shortcut {
+    right: 0 !important;
+  }
+}
+
+[data-kubio-partial-refresh="logo"] {
+  .customize-partial-edit-shortcut {
+    right: -40px !important;
+  }
+}
+
+.wp-block-kubio-post-categories__placeholder {
+  &:empty {
+    padding-right: 0 !important;
+  }
+}
+
+.wp-block-kubio-post-comments {
+  .comment-list .comment {
+    .comment-author {
+      img {
+        height: 60px;
+        width: 60px;
+      }
+
+      span.says{
+        display: none;
+        //margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  [data-kubio-partial-refresh="logo"] {
+    .customize-partial-edit-shortcut {
+      right: 20px !important;
+    }
+  }
+
+  .kubio-offscreen {
+    [data-kubio-partial-refresh="logo"] {
+      .customize-partial-edit-shortcut {
+        right: -10px !important;
+      }
+    }
+  }
+
+  [data-kubio-partial-refresh="title"],
+  [data-kubio-partial-refresh="subtitle"],
+  [data-kubio-partial-refresh="buttons"] {
+    .customize-partial-edit-shortcut {
+      right: 0;
+    }
+  }
+}
+
+/** responsive css start*/
+@media (min-width: 1024px) {
+  .h-hide-lg {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .h-hide-md {
+    display: none;
+  }
+
+  .wp-block-kubio-iconlist {
+    .customize-partial-edit-shortcut {
+      right: 10px !important;
+      top: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .h-hide-sm {
+    display: none;
+  }
+
+  .h-hide-sm-force {
+    display: none !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .h-hide-xs {
+    display: none;
+  }
+
+  .h-hide-xs-force {
+    display: none !important;
+  }
+}
+
+/** responsive css end */
+
+@import "@kubio/block-library/src/style";
+
+// monivo speficic overrides
+
+.monivo-front-header__k__9IGHpldIpw-container {
+  align-items: center;
+}
+
+//// content link underline
+
+.kubio-post-content {
+   a {
+    &,
+    &:hover,
+    &:visited {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.wp-block-kubio-navigation-section,
+.wp-block-kubio-navigation [data-nav-normal]{
+  transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
