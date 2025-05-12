@@ -720,8 +720,8 @@ $defaults = array(
 		),
 
 	),
-	'blog_post_thumb_placeholder_color' => 'rgba(185,185,193,1)',
-	'blog_show_post_thumb_placeholder'  => false,
+	'blog_post_thumb_placeholder_color' => 'rgba(204,204,204,1)',
+	'blog_show_post_thumb_placeholder'  => true,
 	'blog_posts_per_row'                => 2,
 	'blog_enable_masonry'               => true
 );
