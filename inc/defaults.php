@@ -390,12 +390,12 @@ $defaults = array(
 								),
 							),
 							'video'     => array(
-								'videoType'   => 'internal',
+								'videoType'   => 'external',
 								'externalUrl' => 'https://www.youtube.com/watch?v=xXRy-JQ8G0Y',
-								'internalUrl' => get_template_directory_uri() . '/resources/videos/background-video.mp4',
+								'internalUrl' => get_template_directory_uri() . '/resources/videos/demo-video.mp4',
 								'poster'      =>
 									array(
-										'url' => get_template_directory_uri() . '/resources/images/background-video-cover.jpg',
+										'url' => get_template_directory_uri() . '/resources/images/demo-video-cover.jpg',
 									),
 							),
 							'image'     => array(
@@ -622,12 +622,12 @@ $defaults = array(
 								),
 							),
 							'video'     => array(
-								'videoType'   => 'internal',
+								'videoType'   => 'external',
 								'externalUrl' => 'https://www.youtube.com/watch?v=xXRy-JQ8G0Y',
-								'internalUrl' => get_template_directory_uri() . '/resources/videos/background-video.mp4',
+								'internalUrl' => get_template_directory_uri() . '/resources/videos/demo-video.mp4',
 								'poster'      =>
 									array(
-										'url' => get_template_directory_uri() . '/resources/images/background-video-cover.jpg',
+										'url' => get_template_directory_uri() . '/resources/images/demo-video-cover.jpg',
 									),
 							),
 							'image'     => array(
