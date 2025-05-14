@@ -1155,7 +1155,6 @@ body:not(.extra-1) .monivo-front-header__k__J6FPNZyUrn-outer h6, body:not(.extra
 }
 
 #kubio .monivo-front-header__k__A3ia3DXo4-inner {
-    overflow: hidden;
     border-top-color: rgba(var(--kubio-color-5), 0.25);
     border-top-width: 3px;
     border-top-style: solid;
@@ -1174,6 +1173,13 @@ body:not(.extra-1) .monivo-front-header__k__J6FPNZyUrn-outer h6, body:not(.extra
     border-bottom-right-radius: 20px;
     margin-left: 20px;
     text-align: center;
+}
+
+#kubio .monivo-front-header__k__A3ia3DXo4-inner * {
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
 }
 
 #kubio .monivo-front-header__k__A3ia3DXo4-container {
