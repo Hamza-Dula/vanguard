@@ -4265,6 +4265,7 @@ div.h-section-global-spacing {
     }
     #kubio .wp-block.wp-block-kubio-heading__text.monivo-front-header__k__ukjZtaF3MN-text {
         font-size: 4em;
+        text-align: center;
     }
     #kubio .monivo-front-header__k__A3ia3DXo4-inner {
         margin-left: 0px;
@@ -4321,6 +4322,12 @@ div.h-section-global-spacing {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    #kubio p.wp-block.wp-block-kubio-text__text.monivo-front-header__k__Xia0GT4t_-text {
+        text-align: center;
+    }
+    #kubio [data-kubio-partial-refresh='buttons']:not(.extra-1) {
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px) {
@@ -4369,6 +4376,9 @@ div.h-section-global-spacing {
     #kubio p.wp-block.wp-block-kubio-text__text.monivo-front-header__k__Xia0GT4t_-text {
         font-size: 16px;
         line-height: 1.5;
+        text-align: center;
+    }
+    #kubio [data-kubio-partial-refresh='buttons'] {
         text-align: center;
     }
     #kubio .monivo-front-header__k__ZIezwEmwz-spacing {
