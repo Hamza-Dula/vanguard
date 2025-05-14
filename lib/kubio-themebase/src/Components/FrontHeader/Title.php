@@ -39,7 +39,7 @@ class Title extends \ColibriWP\Theme\Components\FrontHeader\Title {
 
 				),
 				"{$prefix}localProps.content" => array(
-					'default' => __( 'Breathe In, Explore More', 'monivo' ),
+					'default' => __( "Let's build this together", 'monivo' ),
 					'control' => array(
 						'label'       => Translations::get( 'title' ),
 						'type'        => 'input',

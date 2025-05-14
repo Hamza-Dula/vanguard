@@ -248,6 +248,10 @@ ul.colibri-menu > li > a > svg path {
       margin-left: 0;
     }
   }
+
+  .wp-block-kubio-hero .wp-block-kubio-column:has(img):not(.extra-1) {
+    padding: 20px;
+  }
 }
 
 .wp-block-kubio-menu-offscreen-content p.monivo-copyright {
@@ -268,7 +272,7 @@ button.wp-block-kubio-menu-offscreen__iconWrapper {
   }
 }
 
-.wp-block-kubio-hero .wp-block-kubio-column:has(img):not(.extra-1) {
+/*.wp-block-kubio-hero .wp-block-kubio-column:has(img):not(.extra-1) {
   padding: 2rem;
-}
+}*/
 

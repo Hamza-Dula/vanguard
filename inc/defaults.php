@@ -245,7 +245,7 @@ $monivo_gradients = array(
 
 );
 
-$monivo_title                         =  'Breathe In, Explore More';
+$monivo_title                         =  "Let's build this together";
 $monivo_subtitle                      =  "Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, lorem ipsum dolor sit amet, at mei dolore tritani in his nemore temporibus.";
 $monivo_theme_action_button           =  'Start your journey';
 $monivo_theme_action_button_secondary =  'Contact us';

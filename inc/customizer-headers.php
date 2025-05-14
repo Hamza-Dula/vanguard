@@ -63,7 +63,7 @@
       'front-header.hero.style.descendants.outer.background.video.poster.url' => '%s/../images/background-video-cover.jpg',
       'front-header.hero.style.descendants.outer.background.overlay.type' => 'gradient',
       'front-header.hero.style.descendants.outer.background.overlay.shape.value' => 'none',
-      'front-header.hero.style.descendants.outer.background.overlay.light' => 50,
+      'front-header.hero.style.descendants.outer.background.overlay.light' => 87,
       'front-header.hero.style.descendants.outer.background.overlay.color.value' => 'rgba(0, 0, 0, 0.5)',
       'front-header.hero.style.descendants.outer.background.overlay.gradient' => 
       array (
@@ -83,7 +83,7 @@
           ),
         ),
       ),
-      'front-header.hero.style.descendants.outer.background.overlay.gradient_opacity' => 100,
+      'front-header.hero.style.descendants.outer.background.overlay.gradient_opacity' => 30,
       'front-header.hero.style.descendants.outer.background.overlay.enabled' => false,
       'front-header.hero.style.padding.top.value' => 170,
       'front-header.hero.style.padding.bottom.value' => 170,
