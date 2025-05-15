@@ -56,17 +56,21 @@
 																	<span class="position-relative wp-block-kubio-pagination-nav-button__text monivo-index__k__anIReR3qh-text monivo-local-387-text kubio-inherit-typography">
 																		<?php esc_html_e('Next', 'monivo'); ?>
 																	</span>
-																	<span class="h-svg-icon wp-block-kubio-pagination-nav-button__icon monivo-index__k__anIReR3qh-icon monivo-local-387-icon" name="ionicons/ios-arrow-right"></span>
-																</a>
-															</span>
+																	<span class="h-svg-icon wp-block-kubio-pagination-nav-button__icon monivo-index__k__anIReR3qh-icon monivo-local-387-icon" name="icons8-line-awesome/long-arrow-right">
+																		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="long-arrow-right" viewBox="0 0 512 545.5">
+																			<path d="M339 180.5l96 96 11.5 11.5-11.5 11.5-96 96-22.5-23L385 304H64v-32h321l-68.5-68.5z"/></svg>
+																		</span>
+																	</a>
+																</span>
+															</div>
+															<?php endif; ?>
 														</div>
-														<?php endif; ?>
 													</div>
 												</div>
 											</div>
 										</div>
+										<?php endif; ?>
 									</div>
-									<?php endif; ?>
 								</div>
 							</div>
 						</div>
@@ -74,4 +78,3 @@
 				</div>
 			</div>
 		</div>
-	</div>
