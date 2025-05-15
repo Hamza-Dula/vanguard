@@ -329,6 +329,10 @@ $defaults = array(
 			'localProps' => array(
 				'content' => $monivo_title
 			),
+			'highlight' => array(
+				'enabled' => true,
+				'word' => 'together'
+			),
 			'style' => array(
 				'descendants' => array(
 					'text' => array(
