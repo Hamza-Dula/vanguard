@@ -48,8 +48,17 @@
 			<arg value="build" />
 		</exec>
 	</target>
-	<target description="Run PHP Composer" name="run_composer">
-		<exec executable="composer" failonerror="true">
+	<target name="run_composer" description="Run PHP Composer" >
+
+		<!-- Step 1: download Composer 2 locally inside the job workspace -->
+		<exec executable="php">
+			<arg value="-r" />
+			<arg value="copy('https://getcomposer.org/composer-2.phar', 'composer2.phar');" />
+		</exec>
+
+		<!-- Step 2: call Composer 2 explicitly -->
+		<exec executable="php" failonerror="true">
+			<arg value="composer2.phar" />
 			<arg value="install" />
 			<arg value="--no-dev" />
 			<arg value="--verbose" />
@@ -57,6 +66,7 @@
 			<arg value="-d" />
 			<arg value="${build_dir}" />
 		</exec>
+
 	</target>
 	<target description="Compose" name="compose">
 		<copy verbose="true" todir="${build_compose_root}">
