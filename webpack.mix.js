@@ -160,7 +160,12 @@ Mix.listen("build", () => {
   }
 
   const css = fs.readFileSync(path, "utf8");
-  const output = postcss()
+  function applyFixes(selector) {
+    return selector
+      .replace(/\[data-kubio\] button/g, '[data-kubio] button:not(figure button):where(:not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))')
+      .replace(/\[data-kubio\] input\[type=button\]/g, '[data-kubio] input[type=button]:not(figure input[type=button])');
+  }
+  postcss()
     .use(
       prefixer({
         prefix: `html.${THEME_PREFIX}-theme`,
@@ -169,11 +174,11 @@ Mix.listen("build", () => {
         // Optional transform callback for case-by-case overrides
         transform: function(prefix, selector, prefixedSelector) {
           if (shouldSkipPrefix(selector)) {
-            return "\n" + selector;
+            return "\n" + applyFixes(selector);
           }
 
-          return "\n" + prefixedSelector;
-        }
+          return "\n" + applyFixes(prefixedSelector);
+        },
       })
     )
     .use(
