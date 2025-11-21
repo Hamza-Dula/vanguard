@@ -162,8 +162,8 @@ Mix.listen("build", () => {
   const css = fs.readFileSync(path, "utf8");
   function applyFixes(selector) {
     return selector
-      .replace(/\[data-kubio\] button/g, '[data-kubio] button:not(figure button):where(:not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))')
-      .replace(/\[data-kubio\] input\[type=button\]/g, '[data-kubio] input[type=button]:not(figure input[type=button])');
+        .replace(/\[data-kubio\] button/g, '[data-kubio] button:where(:not(figure button):not(.wp-block-accordion-heading__toggle):not(.wp-block-navigation-submenu__toggle):not(.wp-block-woocommerce-accordion-header .accordion-item__toggle))')
+        .replace(/\[data-kubio\] input\[type=button\]/g, '[data-kubio] input[type=button]:where(:not(figure input[type=button]))');
   }
   postcss()
     .use(
