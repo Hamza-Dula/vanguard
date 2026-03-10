@@ -1,6 +1,8 @@
 @import "../../customizer/css/partials/colibri-message-overlay";
 
 $browser-bar-height: 20px;
+
+
 $preview-height: 260px;
 
 .monivo-admin-big-notice--container {
@@ -464,7 +466,9 @@ $preview-height: 260px;
 }
 
 
-
+.kubio-notice.notice {
+  background-color: white;
+}
 
 
 
