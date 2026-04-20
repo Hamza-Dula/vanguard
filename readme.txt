@@ -1,4 +1,4 @@
-=== Monivo ===
+=== vanguard ===
 
 Tags: entertainment, food-and-drink, portfolio, one-column, two-columns, grid-layout, custom-header, custom-menu, custom-logo, full-width-template, theme-options, translation-ready, featured-images, threaded-comments
 Requires at least: 5.8
@@ -9,18 +9,18 @@ Requires PHP: 7.1
 
 == Description ==
 
-Monivo is an innovative,  easily customizable, multi-purpose theme, focused on empowering users to build astonishing WordPress websites. Monivo is mainly designed for small businesses, startups, or personal portfolio websites and works perfectly with Kubio Page Builder which enriches the WordPress block editor with a variety of new blocks and advanced styling options to give you full design freedom.
+vanguard is an innovative,  easily customizable, multi-purpose theme, focused on empowering users to build astonishing WordPress websites. vanguard is mainly designed for small businesses, startups, or personal portfolio websites and works perfectly with Kubio Page Builder which enriches the WordPress block editor with a variety of new blocks and advanced styling options to give you full design freedom.
 
 == Frequently Asked Questions ==
 
-= How can I customize Monivo? =
+= How can I customize vanguard? =
 
-    To customize the Monivo theme you have to open the Customizer by accessing the Appearance menu -> Customizer.
+    To customize the vanguard theme you have to open the Customizer by accessing the Appearance menu -> Customizer.
 
 == License ==
 
-Monivo WordPress theme, Copyright (C) 2024 ExtendThemes
-Monivo WordPress theme is licensed under the GPL3.
+vanguard WordPress theme, Copyright (C) 2024 ExtendThemes
+vanguard WordPress theme is licensed under the GPL3.
 
 Unless otherwise specified, all the theme files and scripts are licensed under GNU General Public License.
 The exceptions to this license are as follows:

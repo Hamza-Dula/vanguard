@@ -109,11 +109,11 @@ class PageContent extends ComponentBase {
 
 		wp_link_pages(
 			array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'monivo' ) . '</span>',
+				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'vanguard' ) . '</span>',
 				'after'       => '</div>',
 				'link_before' => '<span>',
 				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'monivo' ) . ' </span>%',
+				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'vanguard' ) . ' </span>%',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			)
 		);

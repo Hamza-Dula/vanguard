@@ -1,5 +1,5 @@
 
-.monivo-admin-big-notice {
+.vanguard-admin-big-notice {
   color: #23282d;
   padding-top: 0;
   padding-left: 0;
@@ -11,7 +11,7 @@
     box-sizing: border-box;
   }
 
-  .monivo-admin-notice-spacer {
+  .vanguard-admin-notice-spacer {
     padding-top: 23px;
     padding-left: 40px;
     padding-bottom: 0;
@@ -65,7 +65,7 @@
         max-width: 500px;
       }
 
-      .monivo-front-page-preview-browser-bar {
+      .vanguard-front-page-preview-browser-bar {
         height: #{$browser-bar-height};
         background-color: #f3f3f7;
         display: flex;
@@ -75,7 +75,7 @@
         border-radius: 4px 4px 0 0;
       }
 
-      .monivo-front-page-preview-browser-dot {
+      .vanguard-front-page-preview-browser-dot {
         width: 3px;
         height: 3px;
         margin-left: 7px;
@@ -83,7 +83,7 @@
         border-radius: 100%;
       }
 
-      .monivo-front-page-preview-image-scroller {
+      .vanguard-front-page-preview-image-scroller {
         overflow: hidden;
         height: calc(100% - #{$browser-bar-height});
         width: 100%;
@@ -103,7 +103,7 @@
       }
     }
 
-    .monivo-notice-dont-show-container {
+    .vanguard-notice-dont-show-container {
       float: right;
       height: 0;
 
