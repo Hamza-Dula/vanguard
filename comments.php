@@ -11,9 +11,9 @@ global $kubio_comments_data;
 		<span class="comments-number">
 			<?php
 			comments_number(
-				__( 'No Responses', 'vanguard' ),
-				__( 'One Response', 'vanguard' ),
-				__( '% Responses', 'vanguard' )
+				__( 'No Responses', 'monivo' ),
+				__( 'One Response', 'monivo' ),
+				__( '% Responses', 'monivo' )
 			);
 			?>
 		</span>
@@ -42,7 +42,7 @@ global $kubio_comments_data;
 							'&#xab; %s',
 							__(
 								'Older Comments',
-								'vanguard'
+								'monivo'
 							)
 						)
 					);
@@ -58,7 +58,7 @@ global $kubio_comments_data;
 							'%s &#xbb;',
 							__(
 								'Newer Comments',
-								'vanguard'
+								'monivo'
 							)
 						)
 					);
@@ -73,7 +73,7 @@ global $kubio_comments_data;
 	<?php
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 		?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'vanguard' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'monivo' ); ?></p>
 		<?php
 	endif;
 	?>

@@ -4,24 +4,24 @@ return array (
   array (
     'icon_list' => 
     array (
-      'selective_selector' => '.vanguard-header__k__-K-yfVwNpy-outer',
-      'styleRef' => '-K-yfVwNpy',
+      'selective_selector' => '.monivo-header__k__dLiK2RrzZ1e-outer',
+      'styleRef' => 'dLiK2RrzZ1e',
       'props' => 
       array (
       ),
     ),
     'social_icons' => 
     array (
-      'selective_selector' => '.vanguard-header__k__HnmQ9fs6xva-outer',
-      'styleRef' => 'HnmQ9fs6xva',
+      'selective_selector' => '.monivo-header__k__8eP_Z08FQbv-outer',
+      'styleRef' => '8eP_Z08FQbv',
       'props' => 
       array (
       ),
     ),
     'logo' => 
     array (
-      'selective_selector' => '.vanguard-header__k__kjBC0CFEkie-container',
-      'styleRef' => 'kjBC0CFEkie',
+      'selective_selector' => '.monivo-header__k__-BPNpcJAqpN-container',
+      'styleRef' => '-BPNpcJAqpN',
       'props' => 
       array (
         'layoutType' => 'image',
@@ -29,24 +29,24 @@ return array (
     ),
     'header-menu' => 
     array (
-      'selective_selector' => '.vanguard-header__k__Nk5Mq7rHoIL-outer',
-      'styleRef' => 'Nk5Mq7rHoIL',
+      'selective_selector' => '.monivo-header__k__KxNZuItwrB_-outer',
+      'styleRef' => 'KxNZuItwrB_',
       'props' => 
       array (
-        'showOffscreenMenuOn' => 'has-offcanvas-tablet',
+        'showOffscreenMenuOn' => 'has-offcanvas-mobile',
       ),
     ),
     'navigation' => 
     array (
-      'selective_selector' => '.vanguard-header__k__vVowpT3CL5P-nav',
-      'styleRef' => 'qKN8wGYjkcm',
+      'selective_selector' => '.monivo-header__k__Z1VDHLWijX2-nav',
+      'styleRef' => 'xOrN-kQnxqX',
       'props' => 
       array (
         'showTopBar' => false,
         'layoutType' => 'logo-spacing-menu',
         'width' => 'boxed',
         'sticky' => true,
-        'overlap' => false,
+        'overlap' => true,
       ),
       'style' => 
       array (
@@ -87,7 +87,7 @@ return array (
     ),
     'hero' => 
     array (
-      'selective_selector' => '.vanguard-header__k__KFTMhA6WOVh-outer',
+      'selective_selector' => '.monivo-header__k__KFTMhA6WOVh-outer',
       'styleRef' => 'KFTMhA6WOVh',
       'props' => 
       array (
@@ -106,52 +106,7 @@ return array (
           array (
             'background' => 
             array (
-              'type' => 'image',
-              'image' => 
-              array (
-                0 => 
-                array (
-                  'attachment' => 'fixed',
-                  'source' => 
-                  array (
-                    'type' => 'image',
-                    'url' => 'http://localhost/vanguard-default/wp-content/uploads/2026/04/sand-rock-sunset-sunlight-sandstone-cave-19710-pxhere.com_-scaled-1.jpg',
-                  ),
-                  'position' => 
-                  array (
-                    'x' => 50,
-                    'y' => 50,
-                  ),
-                ),
-              ),
-              'overlay' => 
-              array (
-                'enabled' => true,
-                'type' => 'color',
-                'gradient' => 'linear-gradient(120deg,rgba(var(--kubio-color-6),0.5) 0%,rgba( 0,0,0,0 ) 84%)',
-                'color' => 
-                array (
-                  'value' => 'rgba(var(--kubio-color-6),1)',
-                  'opacity' => '0.15',
-                ),
-              ),
-              'video' => 
-              array (
-                'internal' => 
-                array (
-                  'url' => 'https://support-work.kubiobuilder.com/theme-default-rounded/wp-content/uploads/2024/10/isorepublic-free-video-drone-snow-mountains-trimmed-1-1.mp4',
-                ),
-                'position' => 
-                array (
-                  'x' => 50,
-                  'y' => 50,
-                ),
-                'poster' => 
-                array (
-                  'id' => 2043,
-                  'url' => 'https://support-work.kubiobuilder.com/theme-default-rounded/wp-content/uploads/2024/10/hero-new2.jpg',
-                ),
-              ),
+              'color' => 'rgba(var(--kubio-color-6),1)',
               'slideshow' => NULL,
             ),
             'padding' => 
@@ -172,7 +127,7 @@ return array (
   array (
     'footer' => 
     array (
-      'selective_selector' => '.vanguard-footer__k__vP0mYzy99sE-outer',
+      'selective_selector' => '.monivo-footer__k__vP0mYzy99sE-outer',
       'styleRef' => 'vP0mYzy99sE',
       'props' => 
       array (
@@ -180,7 +135,6 @@ return array (
         array (
           'name' => 'Footer',
         ),
-        'lock' => NULL,
       ),
       'style' => 
       array (
@@ -201,24 +155,24 @@ return array (
   array (
     'icon_list' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__bgVIVHCsPe-outer',
-      'styleRef' => 'bgVIVHCsPe',
+      'selective_selector' => '.monivo-front-header__k__IkAKcGCXfV-outer',
+      'styleRef' => 'IkAKcGCXfV',
       'props' => 
       array (
       ),
     ),
     'social_icons' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__hMvtMsxIpsp-outer',
-      'styleRef' => 'hMvtMsxIpsp',
+      'selective_selector' => '.monivo-front-header__k__6pmfNsu7Tic-outer',
+      'styleRef' => '6pmfNsu7Tic',
       'props' => 
       array (
       ),
     ),
     'logo' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__0xSC3AT64-container',
-      'styleRef' => '0xSC3AT64',
+      'selective_selector' => '.monivo-front-header__k__6naQ2A99kL3-container',
+      'styleRef' => '6naQ2A99kL3',
       'props' => 
       array (
         'layoutType' => 'image',
@@ -226,16 +180,16 @@ return array (
     ),
     'header-menu' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__c6BbujDIAOY-outer',
-      'styleRef' => 'c6BbujDIAOY',
+      'selective_selector' => '.monivo-front-header__k__qr6B7XVdwN-outer',
+      'styleRef' => 'qr6B7XVdwN',
       'props' => 
       array (
-        'showOffscreenMenuOn' => 'has-offcanvas-tablet',
+        'showOffscreenMenuOn' => 'has-offcanvas-mobile',
       ),
     ),
     'navigation' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__xLwdIMLPC_l-nav',
+      'selective_selector' => '.monivo-front-header__k__xLwdIMLPC_l-nav',
       'styleRef' => 'Gp3qTlxXlu',
       'props' => 
       array (
@@ -243,7 +197,7 @@ return array (
         'layoutType' => 'logo-spacing-menu',
         'width' => 'boxed',
         'sticky' => true,
-        'overlap' => false,
+        'overlap' => true,
       ),
       'style' => 
       array (
@@ -284,7 +238,7 @@ return array (
     ),
     'title' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__ukjZtaF3MN-text',
+      'selective_selector' => '.monivo-front-header__k__ukjZtaF3MN-text',
       'styleRef' => 'ukjZtaF3MN',
       'props' => 
       array (
@@ -302,7 +256,7 @@ return array (
     ),
     'subtitle' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__Xia0GT4t_-text',
+      'selective_selector' => '.monivo-front-header__k__Xia0GT4t_-text',
       'styleRef' => 'Xia0GT4t_',
       'props' => 
       array (
@@ -320,7 +274,7 @@ return array (
     ),
     'button-0' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__Dud6AOZG0Hc-link',
+      'selective_selector' => '.monivo-front-header__k__Dud6AOZG0Hc-link',
       'styleRef' => 'Dud6AOZG0Hc',
       'props' => 
       array (
@@ -343,8 +297,8 @@ return array (
     ),
     'button-1' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__kz-rRg-Dc-link',
-      'styleRef' => 'kz-rRg-Dc',
+      'selective_selector' => '.monivo-front-header__k___nlTwH-h1-link',
+      'styleRef' => '_nlTwH-h1',
       'props' => 
       array (
         'link' => 
@@ -366,7 +320,7 @@ return array (
     ),
     'buttons' => 
     array (
-      'selective_selector' => '.vanguard-front-header__k__ZIezwEmwz-outer',
+      'selective_selector' => '.monivo-front-header__k__ZIezwEmwz-outer',
       'styleRef' => 'ZIezwEmwz',
       'props' => 
       array (
@@ -376,13 +330,13 @@ return array (
     array (
       'image' => 
       array (
-        'selective_selector' => '.vanguard-front-header__k__mv8uzPJDax-outer',
-        'styleRef' => 'mv8uzPJDax',
+        'selective_selector' => '.monivo-front-header__k__ILi961YrQY-outer',
+        'styleRef' => 'ILi961YrQY',
         'props' => 
         array (
         ),
       ),
-      'selective_selector' => '.vanguard-front-header__k__J6FPNZyUrn-outer',
+      'selective_selector' => '.monivo-front-header__k__J6FPNZyUrn-outer',
       'styleRef' => 'J6FPNZyUrn',
       'props' => 
       array (
@@ -401,64 +355,19 @@ return array (
           array (
             'background' => 
             array (
-              'type' => 'image',
-              'image' => 
-              array (
-                0 => 
-                array (
-                  'attachment' => 'fixed',
-                  'source' => 
-                  array (
-                    'type' => 'image',
-                    'url' => 'http://localhost/vanguard-default/wp-content/uploads/2026/04/sand-rock-sunset-sunlight-sandstone-cave-19710-pxhere.com_-scaled-1.jpg',
-                  ),
-                  'position' => 
-                  array (
-                    'x' => 50,
-                    'y' => 50,
-                  ),
-                ),
-              ),
-              'overlay' => 
-              array (
-                'enabled' => true,
-                'type' => 'color',
-                'gradient' => 'linear-gradient(120deg,rgba(var(--kubio-color-6),0.5) 0%,rgba( 0,0,0,0 ) 84%)',
-                'color' => 
-                array (
-                  'value' => 'rgba(var(--kubio-color-6),1)',
-                  'opacity' => '0.15',
-                ),
-              ),
-              'video' => 
-              array (
-                'internal' => 
-                array (
-                  'url' => 'https://support-work.kubiobuilder.com/theme-default-rounded/wp-content/uploads/2024/10/isorepublic-free-video-drone-snow-mountains-trimmed-1-1.mp4',
-                ),
-                'position' => 
-                array (
-                  'x' => 50,
-                  'y' => 50,
-                ),
-                'poster' => 
-                array (
-                  'id' => 2043,
-                  'url' => 'https://support-work.kubiobuilder.com/theme-default-rounded/wp-content/uploads/2024/10/hero-new2.jpg',
-                ),
-              ),
+              'color' => '#17141f',
               'slideshow' => NULL,
             ),
             'padding' => 
             array (
               'bottom' => 
               array (
-                'value' => 200,
+                'value' => 170,
                 'unit' => 'px',
               ),
               'top' => 
               array (
-                'value' => 200,
+                'value' => 170,
                 'unit' => 'px',
               ),
             ),
@@ -477,27 +386,27 @@ return array (
   array (
     'kubio-color-1' => 
     array (
-      0 => 168,
-      1 => 124,
-      2 => 121,
+      0 => 121,
+      1 => 99,
+      2 => 255,
     ),
     'kubio-color-2' => 
     array (
-      0 => 217,
-      1 => 82,
-      2 => 4,
+      0 => 249,
+      1 => 193,
+      2 => 7,
     ),
     'kubio-color-3' => 
     array (
-      0 => 121,
-      1 => 165,
-      2 => 168,
+      0 => 255,
+      1 => 121,
+      2 => 99,
     ),
     'kubio-color-4' => 
     array (
-      0 => 238,
-      1 => 238,
-      2 => 238,
+      0 => 199,
+      1 => 99,
+      2 => 255,
     ),
     'kubio-color-5' => 
     array (
@@ -507,129 +416,129 @@ return array (
     ),
     'kubio-color-6' => 
     array (
-      0 => 0,
-      1 => 0,
-      2 => 0,
+      0 => 23,
+      1 => 20,
+      2 => 31,
     ),
     'kubio-color-1-variant-1' => 
     array (
-      0 => 252,
-      1 => 186,
-      2 => 182,
+      0 => 194,
+      1 => 184,
+      2 => 255,
     ),
     'kubio-color-1-variant-2' => 
     array (
-      0 => 168,
-      1 => 124,
-      2 => 121,
+      0 => 121,
+      1 => 99,
+      2 => 255,
     ),
     'kubio-color-1-variant-3' => 
     array (
-      0 => 167,
-      1 => 71,
-      2 => 65,
+      0 => 48,
+      1 => 14,
+      2 => 255,
     ),
     'kubio-color-1-variant-4' => 
     array (
-      0 => 167,
-      1 => 19,
-      2 => 9,
+      0 => 80,
+      1 => 66,
+      2 => 169,
     ),
     'kubio-color-1-variant-5' => 
     array (
-      0 => 82,
-      1 => 61,
-      2 => 59,
+      0 => 40,
+      1 => 33,
+      2 => 84,
     ),
     'kubio-color-2-variant-1' => 
     array (
-      0 => 216,
-      1 => 173,
-      2 => 148,
+      0 => 248,
+      1 => 231,
+      2 => 172,
     ),
     'kubio-color-2-variant-2' => 
     array (
-      0 => 216,
-      1 => 127,
-      2 => 76,
+      0 => 248,
+      1 => 212,
+      2 => 90,
     ),
     'kubio-color-2-variant-3' => 
     array (
-      0 => 217,
-      1 => 82,
-      2 => 4,
+      0 => 249,
+      1 => 193,
+      2 => 7,
     ),
     'kubio-color-2-variant-4' => 
     array (
-      0 => 131,
-      1 => 49,
-      2 => 2,
+      0 => 163,
+      1 => 127,
+      2 => 4,
     ),
     'kubio-color-2-variant-5' => 
     array (
-      0 => 46,
-      1 => 17,
-      2 => 1,
+      0 => 78,
+      1 => 61,
+      2 => 2,
     ),
     'kubio-color-3-variant-1' => 
     array (
-      0 => 182,
-      1 => 248,
-      2 => 252,
+      0 => 255,
+      1 => 194,
+      2 => 184,
     ),
     'kubio-color-3-variant-2' => 
     array (
-      0 => 121,
-      1 => 165,
-      2 => 168,
+      0 => 255,
+      1 => 121,
+      2 => 99,
     ),
     'kubio-color-3-variant-3' => 
     array (
-      0 => 65,
-      1 => 161,
-      2 => 167,
+      0 => 255,
+      1 => 48,
+      2 => 14,
     ),
     'kubio-color-3-variant-4' => 
     array (
-      0 => 9,
-      1 => 157,
-      2 => 167,
+      0 => 169,
+      1 => 80,
+      2 => 66,
     ),
     'kubio-color-3-variant-5' => 
     array (
-      0 => 59,
-      1 => 81,
-      2 => 82,
+      0 => 84,
+      1 => 40,
+      2 => 33,
     ),
     'kubio-color-4-variant-1' => 
     array (
-      0 => 238,
-      1 => 238,
-      2 => 238,
+      0 => 229,
+      1 => 184,
+      2 => 255,
     ),
     'kubio-color-4-variant-2' => 
     array (
-      0 => 186,
-      1 => 186,
-      2 => 186,
+      0 => 199,
+      1 => 99,
+      2 => 255,
     ),
     'kubio-color-4-variant-3' => 
     array (
-      0 => 135,
-      1 => 135,
-      2 => 135,
+      0 => 168,
+      1 => 14,
+      2 => 255,
     ),
     'kubio-color-4-variant-4' => 
     array (
-      0 => 84,
-      1 => 84,
-      2 => 84,
+      0 => 132,
+      1 => 66,
+      2 => 169,
     ),
     'kubio-color-4-variant-5' => 
     array (
-      0 => 33,
+      0 => 66,
       1 => 33,
-      2 => 33,
+      2 => 84,
     ),
     'kubio-color-5-variant-1' => 
     array (
@@ -663,33 +572,33 @@ return array (
     ),
     'kubio-color-6-variant-1' => 
     array (
-      0 => 204,
-      1 => 204,
-      2 => 204,
+      0 => 149,
+      1 => 129,
+      2 => 200,
     ),
     'kubio-color-6-variant-2' => 
     array (
-      0 => 153,
-      1 => 153,
-      2 => 153,
+      0 => 86,
+      1 => 74,
+      2 => 115,
     ),
     'kubio-color-6-variant-3' => 
     array (
-      0 => 102,
-      1 => 102,
-      2 => 102,
+      0 => 30,
+      1 => 30,
+      2 => 30,
     ),
     'kubio-color-6-variant-4' => 
     array (
-      0 => 51,
-      1 => 51,
-      2 => 51,
+      0 => 23,
+      1 => 20,
+      2 => 31,
     ),
     'kubio-color-6-variant-5' => 
     array (
-      0 => 0,
-      1 => 0,
-      2 => 0,
+      0 => 15,
+      1 => 9,
+      2 => 30,
     ),
   ),
   'fonts' => 
@@ -703,12 +612,6 @@ return array (
       4 => 700,
       5 => 500,
       6 => 900,
-    ),
-    'Roboto' => 
-    array (
-      0 => 400,
-      1 => 500,
-      2 => 700,
     ),
   ),
 );

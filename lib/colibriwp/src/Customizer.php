@@ -443,10 +443,10 @@ class Customizer {
 						'theme_prefix'                => Theme::prefix( '', false ),
 					),
 					'builderStatusData'               => array(
-						'status'       => vanguard_theme()->getPluginsManager()->getPluginState( vanguard_get_builder_plugin_slug() ),
-						'install_url'  => vanguard_theme()->getPluginsManager()->getInstallLink( vanguard_get_builder_plugin_slug() ),
-						'activate_url' => vanguard_theme()->getPluginsManager()->getActivationLink( vanguard_get_builder_plugin_slug() ),
-						'slug'         => vanguard_get_builder_plugin_slug(),
+						'status'       => monivo_theme()->getPluginsManager()->getPluginState( monivo_get_builder_plugin_slug() ),
+						'install_url'  => monivo_theme()->getPluginsManager()->getInstallLink( monivo_get_builder_plugin_slug() ),
+						'activate_url' => monivo_theme()->getPluginsManager()->getActivationLink( monivo_get_builder_plugin_slug() ),
+						'slug'         => monivo_get_builder_plugin_slug(),
 						'messages'     => array(
 							'installing' => Translations::get( 'installing', 'Kubio Page Builder' ),
 							'activating' => Translations::get( 'activating', 'Kubio Page Builder' ),

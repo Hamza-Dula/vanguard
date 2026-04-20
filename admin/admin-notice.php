@@ -5,7 +5,7 @@ use Kubio\Theme\Theme;
 
 wp_localize_script(
 	get_template() . '-page-info',
-	'vanguard_admin',
+	'monivo_admin',
 	array(
 		'getStartedData'    => array(
 			'plugin_installed_and_active' => Translations::escHtml( 'plugin_installed_and_active' ),
@@ -15,10 +15,10 @@ wp_localize_script(
 			'theme_prefix'                => Theme::prefix( '', false ),
 		),
 		'builderStatusData' => array(
-			'status'                          => vanguard_theme()->getPluginsManager()->getPluginState( vanguard_get_builder_plugin_slug() ),
-			'install_url'                     => vanguard_theme()->getPluginsManager()->getInstallLink( vanguard_get_builder_plugin_slug() ),
-			'activate_url'                    => vanguard_theme()->getPluginsManager()->getActivationLink( vanguard_get_builder_plugin_slug() ),
-			'slug'                            => vanguard_get_builder_plugin_slug(),
+			'status'                          => monivo_theme()->getPluginsManager()->getPluginState( monivo_get_builder_plugin_slug() ),
+			'install_url'                     => monivo_theme()->getPluginsManager()->getInstallLink( monivo_get_builder_plugin_slug() ),
+			'activate_url'                    => monivo_theme()->getPluginsManager()->getActivationLink( monivo_get_builder_plugin_slug() ),
+			'slug'                            => monivo_get_builder_plugin_slug(),
 			'kubio_front_set_predesign_nonce' => wp_create_nonce( 'kubio_front_set_predesign_nonce' ),
 			'kubio_disable_big_notice_nonce'  => wp_create_nonce( 'kubio_disable_big_notice_nonce' ),
 			'plugin_activate_nonce'           => wp_create_nonce( 'plugin_activate_nonce' ),
@@ -33,36 +33,36 @@ wp_localize_script(
 
 ?>
 
-<div class="vanguard-notice-dont-show-container">
-	<button class="button-link vanguard-dont-show-notice">
+<div class="monivo-notice-dont-show-container">
+	<button class="button-link monivo-dont-show-notice">
 		<?php Translations::escHtmlE( 'dont_show_anymore' ); ?>
 	</button>
 </div>
 
-<div class="vanguard-admin-notice-spacer">
-	<div class="vanguard-admin-big-notice--container">
+<div class="monivo-admin-notice-spacer">
+	<div class="monivo-admin-big-notice--container">
 		<div class="content-holder">
 			<div class="messages-area">
 				<div class="title-holder">
-					<h1><?php Translations::escHtmlE( 'would_you_like_to_install_front_page', vanguard_theme()->getName() ); ?></h1>
-					<p><?php Translations::escHtmlE( 'theme_description', vanguard_theme()->getName() ); ?></p>
+					<h1><?php Translations::escHtmlE( 'would_you_like_to_install_front_page', monivo_theme()->getName() ); ?></h1>
+					<p><?php Translations::escHtmlE( 'theme_description', monivo_theme()->getName() ); ?></p>
 				</div>
 
 				<ul>
 					<li>
-						<img src="<?php echo vanguard_theme()->getListMarkerUrl(); ?>" alt="">
+						<img src="<?php echo monivo_theme()->getListMarkerUrl(); ?>" alt="">
 						<?php Translations::escHtmlE( 'benefit_1' ); ?>
 					</li>
 					<li>
-						<img src="<?php echo vanguard_theme()->getListMarkerUrl(); ?>" alt="">
+						<img src="<?php echo monivo_theme()->getListMarkerUrl(); ?>" alt="">
 						<?php Translations::escHtmlE( 'benefit_2' ); ?>
 					</li>
 					<li>
-						<img src="<?php echo vanguard_theme()->getListMarkerUrl(); ?>" alt="">
+						<img src="<?php echo monivo_theme()->getListMarkerUrl(); ?>" alt="">
 						<?php Translations::escHtmlE( 'benefit_3' ); ?>
 					</li>
 					<li>
-						<img src="<?php echo vanguard_theme()->getListMarkerUrl(); ?>" alt="">
+						<img src="<?php echo monivo_theme()->getListMarkerUrl(); ?>" alt="">
 						<?php Translations::escHtmlE( 'benefit_4' ); ?>
 					</li>
 				</ul>
@@ -91,7 +91,7 @@ wp_localize_script(
 			</div>
 
 			<div class="front-page-preview">
-				<img src="<?php echo esc_url( vanguard_theme()->getFrontPagePreview() ); ?>"/>
+				<img src="<?php echo esc_url( monivo_theme()->getFrontPagePreview() ); ?>"/>
 			</div>
 		</div>
 	</div>

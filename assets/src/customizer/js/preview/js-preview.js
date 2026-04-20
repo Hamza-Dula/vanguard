@@ -4,7 +4,7 @@ import domready from "domready";
 domready(function() {
   /*
   Not knowing what this does
-
+  Commented to fix this: https://mantis.iconvert.pro/view.php?id=55465
 
   if (window !== top) {
     setTimeout(() => {

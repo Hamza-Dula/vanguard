@@ -18,8 +18,8 @@ class ButtonsGroup extends ComponentBase {
 	protected static function getOptions() {
 		$prefix = static::$settings_prefix;
 
-        $theme_action_button           =__( 'Get in control', 'vanguard' );
-        $theme_action_button_secondary = __( 'Contact us', 'vanguard' );
+        $theme_action_button           =__( 'Get in control', 'monivo' );
+        $theme_action_button_secondary = __( 'Contact us', 'monivo' );
         $default_value = array(
             array(
                 'label'       => sprintf( $theme_action_button, 1 ),

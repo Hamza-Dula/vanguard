@@ -5,7 +5,7 @@ use Kubio\Theme\Theme;
 
 wp_localize_script(
 	get_template() . '-page-info',
-	'vanguard_admin',
+	'monivo_admin',
 	array(
 		'getStartedData'    => array(
 			'plugin_installed_and_active' => Translations::escHtml( 'plugin_installed_and_active' ),
@@ -15,10 +15,10 @@ wp_localize_script(
 			'theme_prefix'                => Theme::prefix( '', false ),
 		),
 		'builderStatusData' => array(
-			'status'                          => vanguard_theme()->getPluginsManager()->getPluginState( vanguard_get_builder_plugin_slug() ),
-			'install_url'                     => vanguard_theme()->getPluginsManager()->getInstallLink( vanguard_get_builder_plugin_slug() ),
-			'activate_url'                    => vanguard_theme()->getPluginsManager()->getActivationLink( vanguard_get_builder_plugin_slug() ),
-			'slug'                            => vanguard_get_builder_plugin_slug(),
+			'status'                          => monivo_theme()->getPluginsManager()->getPluginState( monivo_get_builder_plugin_slug() ),
+			'install_url'                     => monivo_theme()->getPluginsManager()->getInstallLink( monivo_get_builder_plugin_slug() ),
+			'activate_url'                    => monivo_theme()->getPluginsManager()->getActivationLink( monivo_get_builder_plugin_slug() ),
+			'slug'                            => monivo_get_builder_plugin_slug(),
 			'kubio_front_set_predesign_nonce' => wp_create_nonce( 'kubio_front_set_predesign_nonce' ),
 			'kubio_disable_big_notice_nonce'  => wp_create_nonce( 'kubio_disable_big_notice_nonce' ),
 			'plugin_activate_nonce'           => wp_create_nonce( 'plugin_activate_nonce' ),
@@ -39,47 +39,47 @@ wp_localize_script(
 );
 ?>
 
-<div class="vanguard-admin-big-notice--container">
+<div class="monivo-admin-big-notice--container">
 	<div class="logo-holder">
-        <h2><?php echo sprintf(__("Choose one of the %s predefined designs to start with:", 'vanguard'), ucfirst(get_stylesheet())); ?></h2>
+        <h2><?php echo sprintf(__("Choose one of the %s predefined designs to start with:", 'monivo'), ucfirst(get_stylesheet())); ?></h2>
 	</div>
 	<div class="content-holder">
 		<ul class="predefined-front-pages">
 			<?php
             $front_page_designs =   array(
                 array(
-                    'name'    => __( 'Modern', 'vanguard' ),
+                    'name'    => __( 'Modern', 'monivo' ),
                     'index'   => 1,
                     'preview' => 'front-page-1.jpg',
                 ),
 
                 array(
-                    'name'    => __( 'Fullscreen', 'vanguard' ),
+                    'name'    => __( 'Fullscreen', 'monivo' ),
                     'index'   => 2,
                     'preview' => 'front-page-2.jpg',
                 ),
 
                 array(
-                    'name'    => __( 'Classic', 'vanguard' ),
+                    'name'    => __( 'Classic', 'monivo' ),
                     'index'   => 3,
                     'preview' => 'front-page-3.jpg',
                 ),
 
                 array(
-                    'name'    => __( '', 'vanguard' ),
+                    'name'    => __( '', 'monivo' ),
                     'index'   => 4,
                     'preview' => 'admin/ai-icon.svg',
                 ),
             );
 
 
-            foreach ( $front_page_designs as $vanguard_design_index => $design ) : ?>
+            foreach ( $front_page_designs as $monivo_design_index => $design ) : ?>
 				<?php
-					$vanguard_design_selected = $vanguard_design_index === 0 ? 'selected' : '';
+					$monivo_design_selected = $monivo_design_index === 0 ? 'selected' : '';
 					$preview_image_name      = isset( $design['preview'] ) ? $design['preview'] : "front-page-{$design['index']}.png";
 				?>
 				<li data-index="<?php echo esc_attr( $design['index'] ); ?>"
-					class="<?php echo $vanguard_design_selected; ?>">
+					class="<?php echo $monivo_design_selected; ?>">
 
                     <div class="predefined-front-page-card">
                         <div class="selected-badge"></div>
@@ -91,7 +91,7 @@ wp_localize_script(
                         </div>
 						<div class="front-page-design-wrapper">
 							<div class="design-preview-image"
-								 style="background-image: url(<?php echo esc_attr( vanguard_theme()->getAssetsManager()->getBaseURL() . "/images/{$preview_image_name}" ); ?>)"
+								 style="background-image: url(<?php echo esc_attr( monivo_theme()->getAssetsManager()->getBaseURL() . "/images/{$preview_image_name}" ); ?>)"
 							></div>
 						</div>
 

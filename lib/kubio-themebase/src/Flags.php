@@ -45,10 +45,10 @@ class Flags {
 				return $this->flags[ $flag ];
 			}
 
-			$vanguard_flags_defaults = apply_filters( 'kubio/instance-flags-default', array() );
+			$monivo_flags_defaults = apply_filters( 'kubio/instance-flags-default', array() );
 
-			if ( isset( $vanguard_flags_defaults[ $flag ] ) ) {
-				return $vanguard_flags_defaults[ $flag ];
+			if ( isset( $monivo_flags_defaults[ $flag ] ) ) {
+				return $monivo_flags_defaults[ $flag ];
 			}
 
 			return $data;

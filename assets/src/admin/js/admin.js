@@ -1,12 +1,12 @@
 (function($) {
-  let $notice_container = $(".vanguard-admin-big-notice--container");
+  let $notice_container = $(".monivo-admin-big-notice--container");
   let selectedFrontPage = 0;
 
-  if (!window.vanguard_admin) {
+  if (!window.monivo_admin) {
     return;
   }
 
-  const { builderStatusData, getStartedData } = window.vanguard_admin;
+  const { builderStatusData, getStartedData } = window.monivo_admin;
 
   $notice_container.on("click", ".predefined-front-pages li", event => {
     let $item = $(event.currentTarget);
@@ -21,14 +21,14 @@
   }
 
   function toggleProcessing(value) {
-    $(window).on("beforeunload.vanguard-admin-big-notice", () => {
+    $(window).on("beforeunload.monivo-admin-big-notice", () => {
       return true;
     });
     if (value) {
-      $(".vanguard-admin-big-notice").addClass("processing");
-      $(".vanguard-admin-big-notice .action-buttons").fadeOut();
+      $(".monivo-admin-big-notice").addClass("processing");
+      $(".monivo-admin-big-notice .action-buttons").fadeOut();
     } else {
-      $(".vanguard-admin-big-notice").removeClass("processing");
+      $(".monivo-admin-big-notice").removeClass("processing");
     }
   }
 
@@ -72,7 +72,7 @@
         activateBuilder(callback);
       })
       .always(() => {
-        $(window).off("beforeunload.vanguard-admin-big-notice");
+        $(window).off("beforeunload.monivo-admin-big-notice");
       });
   }
 
@@ -86,7 +86,7 @@
       })
       .done(response => {
         setTimeout(() => {
-          $(window).off("beforeunload.vanguard-admin-big-notice");
+          $(window).off("beforeunload.monivo-admin-big-notice");
           window.location = response.redirect || window.location;
         }, 500);
       });
@@ -141,15 +141,15 @@
     });
   });
 
-  $notice_root = $notice_container.closest(".vanguard-admin-big-notice");
+  $notice_root = $notice_container.closest(".monivo-admin-big-notice");
   $custom_close_button = $notice_root.find(
-    ".vanguard-notice-dont-show-container"
+    ".monivo-notice-dont-show-container"
   );
   if ($custom_close_button.length) {
     $custom_close_button.on("click", function() {
       disableNotice();
       $notice_container
-        .closest(".vanguard-admin-big-notice")
+        .closest(".monivo-admin-big-notice")
         .find("button.notice-dismiss")
         .click();
     });
@@ -259,7 +259,7 @@
     }
   });
 
-  window.vanguard_admin.showOverlay = showOverlay;
+  window.monivo_admin.showOverlay = showOverlay;
 })(jQuery);
 
 

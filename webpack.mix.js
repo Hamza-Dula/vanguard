@@ -9,7 +9,7 @@ let url = require("postcss-url");
 let exec = require("child_process").exec;
 let spawn = require("child_process").spawn;
 
-const THEME_PREFIX = "vanguard";
+const THEME_PREFIX = "monivo";
 
 const prefixer = require("postcss-prefix-selector");
 

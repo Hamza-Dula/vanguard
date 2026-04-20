@@ -47,7 +47,7 @@ class Theme extends ThemeBase {
 			?>
             <script>
 				jQuery(function ($) {
-					$(".vanguard-admin-big-notice").show();
+					$(".monivo-admin-big-notice").show();
 				});
             </script>
 			<?php
@@ -87,7 +87,7 @@ class Theme extends ThemeBase {
 	public function addThemeNotice() {
 		if ( $this->shouldDisplayAdminNotice() ) :
 			?>
-            <div class="kubio-notice notice notice-success is-dismissible vanguard-admin-big-notice notice-large">
+            <div class="kubio-notice notice notice-success is-dismissible monivo-admin-big-notice notice-large">
 				<?php View::make( 'admin/admin-notice-frontpage' ); ?>
             </div>
             <script>
@@ -128,11 +128,11 @@ class Theme extends ThemeBase {
                                    value="kubio-install-new-homepage" checked ai="true"></input>
                             <div class="radio-card">
                                 <div class="radio-card__radio-checked">
-									<?php echo file_get_contents( vanguard_theme()->getThemeResource( 'images/theme-base/check.svg' ) ); ?>
+									<?php echo file_get_contents( monivo_theme()->getThemeResource( 'images/theme-base/check.svg' ) ); ?>
                                     <div class="radio-card__radio-checked__background"></div>
                                 </div>
                                 <div class="radio-card__image-container">
-                                    <img src="<?php echo vanguard_theme()->getThemeResource( 'images/theme-base/web-layout.png' ); ?>"
+                                    <img src="<?php echo monivo_theme()->getThemeResource( 'images/theme-base/web-layout.png' ); ?>"
                                          alt="web-layout" draggable="false">
                                 </div>
                                 <span>
@@ -148,11 +148,11 @@ class Theme extends ThemeBase {
                                    value="kubio-keep-current-layout"></input>
                             <div class="radio-card">
                                 <div class="radio-card__radio-checked">
-									<?php echo file_get_contents( vanguard_theme()->getThemeResource( 'images/theme-base/check.svg' ) ); ?>
+									<?php echo file_get_contents( monivo_theme()->getThemeResource( 'images/theme-base/check.svg' ) ); ?>
                                     <div class="radio-card__radio-checked__background"></div>
                                 </div>
                                 <div class="radio-card__image-container">
-                                    <img src="<?php echo vanguard_theme()->getThemeResource( 'images/theme-base/blog-layout.png' ); ?>"
+                                    <img src="<?php echo monivo_theme()->getThemeResource( 'images/theme-base/blog-layout.png' ); ?>"
                                          alt="blog-layout" draggable="false">
                                 </div>
                                 <span>
@@ -187,23 +187,23 @@ class Theme extends ThemeBase {
                     </div>
 
                     <div class="kubio-onboarding__wrapper__content">
-                        <p><?php Translations::escHtmlE( 'theme_description', vanguard_theme()->getName() ); ?></p>
+                        <p><?php Translations::escHtmlE( 'theme_description', monivo_theme()->getName() ); ?></p>
 
                         <ul>
                             <li>
-								<?php echo file_get_contents( vanguard_theme()->getThemeResource( 'images/theme-base/round-check.svg' ) ); ?>
+								<?php echo file_get_contents( monivo_theme()->getThemeResource( 'images/theme-base/round-check.svg' ) ); ?>
 								<?php Translations::escHtmlE( 'benefit_1' ); ?>
                             </li>
                             <li>
-								<?php echo file_get_contents( vanguard_theme()->getThemeResource( 'images/theme-base/round-check.svg' ) ); ?>
+								<?php echo file_get_contents( monivo_theme()->getThemeResource( 'images/theme-base/round-check.svg' ) ); ?>
 								<?php Translations::escHtmlE( 'benefit_2' ); ?>
                             </li>
                             <li>
-								<?php echo file_get_contents( vanguard_theme()->getThemeResource( 'images/theme-base/round-check.svg' ) ); ?>
+								<?php echo file_get_contents( monivo_theme()->getThemeResource( 'images/theme-base/round-check.svg' ) ); ?>
 								<?php Translations::escHtmlE( 'benefit_3' ); ?>
                             </li>
                             <li>
-								<?php echo file_get_contents( vanguard_theme()->getThemeResource( 'images/theme-base/round-check.svg' ) ); ?>
+								<?php echo file_get_contents( monivo_theme()->getThemeResource( 'images/theme-base/round-check.svg' ) ); ?>
 								<?php Translations::escHtmlE( 'benefit_4' ); ?>
                             </li>
                         </ul>

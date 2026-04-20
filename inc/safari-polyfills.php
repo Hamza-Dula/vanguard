@@ -2,7 +2,7 @@
 
 use Wolfcast\BrowserDetection;
 
-function vanguard_safari_polyfills() {
+function monivo_safari_polyfills() {
 
 	if ( apply_filters( 'kubio_is_enabled', false ) ) {
 		return;
@@ -89,7 +89,7 @@ function vanguard_safari_polyfills() {
 	}
 }
 
-add_action( 'init', 'vanguard_safari_polyfills' );
+add_action( 'init', 'monivo_safari_polyfills' );
 
 
 

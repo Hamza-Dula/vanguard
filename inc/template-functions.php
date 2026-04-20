@@ -2,7 +2,7 @@
 
 use ColibriWP\Theme\Defaults;
 
-function vanguard_theme_print_footer_copyright( $short = false ) {
+function monivo_theme_print_footer_copyright( $short = false ) {
 	$slug            = get_template();
 	$copyright_class = "{$slug}-copyright";
 	?>
@@ -15,7 +15,7 @@ function vanguard_theme_print_footer_copyright( $short = false ) {
 				&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'blogname' ); ?>.
 				<?php
 				printf(
-					__( 'Created with ❤️ using WordPress and %s', 'vanguard' ),
+					__( 'Created with ❤️ using WordPress and %s', 'monivo' ),
 					'<a target="_blank" rel="noreferrer" href="https://kubiobuilder.com/">Kubio</a>'
 				);
 				?>
@@ -25,7 +25,7 @@ function vanguard_theme_print_footer_copyright( $short = false ) {
 	<?php
 }
 
-function vanguard_print_color_scheme() {
+function monivo_print_color_scheme() {
 	$colors = Defaults::get( 'colors' );
 
 	$color_vars = array();
@@ -44,12 +44,12 @@ function vanguard_print_color_scheme() {
 }
 
 
-function vanguard_print_page_title() {
+function monivo_print_page_title() {
 	$title = '';
 	if ( is_404() ) {
-		$title = __( 'Page not found', 'vanguard' );
+		$title = __( 'Page not found', 'monivo' );
 	} elseif ( is_search() ) {
-		$title = sprintf( __( 'Search Results for &#8220;%s&#8221;', 'vanguard' ), get_search_query() );
+		$title = sprintf( __( 'Search Results for &#8220;%s&#8221;', 'monivo' ), get_search_query() );
 	} elseif ( is_home() ) {
 		if ( is_front_page() ) {
 			$title = get_bloginfo( 'name' );
@@ -77,19 +77,19 @@ function vanguard_print_page_title() {
 	echo $title;
 }
 
-function vanguard_post_comments_template( $form = '' ) {
+function monivo_post_comments_template( $form = '' ) {
 	return get_template_directory() . '/template-parts/blog/comments.php';
 }
 
-function vanguard_post_comments( $attrs = array() ) {
+function monivo_post_comments( $attrs = array() ) {
 
 	ob_start();
 
 	if ( comments_open( get_the_ID() ) ) {
-		vanguard_theme()->setState( 'comments_template_data', $attrs );
-		add_filter( 'comments_template', 'vanguard_post_comments_template' );
+		monivo_theme()->setState( 'comments_template_data', $attrs );
+		add_filter( 'comments_template', 'monivo_post_comments_template' );
 		comments_template();
-		remove_filter( 'comments_template', 'vanguard_post_comments_template' );
+		remove_filter( 'comments_template', 'monivo_post_comments_template' );
 	} else {
 		echo $attrs['disabled'];
 	}
@@ -98,29 +98,29 @@ function vanguard_post_comments( $attrs = array() ) {
 	echo $content;
 }
 
-function vanguard_post_excerpt_length( $length ) {
-	$length = vanguard_theme()->getState( 'post_excerpt_length', $length );
-	vanguard_theme()->deleteState( 'post_excerpt_length' );
+function monivo_post_excerpt_length( $length ) {
+	$length = monivo_theme()->getState( 'post_excerpt_length', $length );
+	monivo_theme()->deleteState( 'post_excerpt_length' );
 
 	return $length;
 }
 
-function vanguard_post_excerpt( $attrs = array() ) {
+function monivo_post_excerpt( $attrs = array() ) {
 
 	if ( isset( $attrs['max_length'] ) ) {
-		vanguard_theme()->setState( 'post_excerpt_length', $attrs['max_length'] );
+		monivo_theme()->setState( 'post_excerpt_length', $attrs['max_length'] );
 
 	}
-	add_filter( 'excerpt_length', 'vanguard_post_excerpt_length' );
+	add_filter( 'excerpt_length', 'monivo_post_excerpt_length' );
 
 	echo get_the_excerpt();
 
-	vanguard_theme()->deleteState( 'post_excerpt_length' );
+	monivo_theme()->deleteState( 'post_excerpt_length' );
 
-	remove_filter( 'excerpt_length', 'vanguard_post_excerpt_length' );
+	remove_filter( 'excerpt_length', 'monivo_post_excerpt_length' );
 }
 
-function vanguard_post_missing_featured_image_class() {
+function monivo_post_missing_featured_image_class() {
 	if ( has_post_thumbnail() ) {
 		echo '';
 
@@ -130,23 +130,23 @@ function vanguard_post_missing_featured_image_class() {
 
 }
 
-function vanguard_get_navigation_button_link( $prev = false ) {
+function monivo_get_navigation_button_link( $prev = false ) {
 
 	if ( is_single() ) {
-		vanguard_get_single_post_nav_button_link( $prev );
+		monivo_get_single_post_nav_button_link( $prev );
 	}
 
-	vanguard_get_archive_post_nav_button_link( $prev );
+	monivo_get_archive_post_nav_button_link( $prev );
 
 }
 
-function vanguard_get_single_post_nav_button_link( $prev = false ) {
+function monivo_get_single_post_nav_button_link( $prev = false ) {
 
 	$post = get_adjacent_post( false, '', $prev, 'category' );
 	echo esc_url( get_permalink( $post ) );
 }
 
-function vanguard_get_archive_post_nav_button_link( $prev = false ) {
+function monivo_get_archive_post_nav_button_link( $prev = false ) {
 
 	if ( $prev ) {
 		echo get_previous_posts_page_link();
@@ -156,7 +156,7 @@ function vanguard_get_archive_post_nav_button_link( $prev = false ) {
 
 }
 
-function vanguard_has_pagination() {
+function monivo_has_pagination() {
 
 	if ( is_single() ) {
 		$prev_post = get_adjacent_post();
@@ -171,7 +171,7 @@ function vanguard_has_pagination() {
 	return ( $total > 1 );
 }
 
-function vanguard_has_pagination_button( $prev = false ) {
+function monivo_has_pagination_button( $prev = false ) {
 	if ( is_single() ) {
 		$post = get_adjacent_post( false, '', $prev, 'category' );
 
@@ -188,7 +188,7 @@ function vanguard_has_pagination_button( $prev = false ) {
 	}
 }
 
-function vanguard_pagination_numbers() {
+function monivo_pagination_numbers() {
 	echo paginate_links(
 		array(
 			'prev_next' => false,
@@ -197,7 +197,7 @@ function vanguard_pagination_numbers() {
 	);
 }
 
-function vanguard_tags_list( $placeholder = '' ) {
+function monivo_tags_list( $placeholder = '' ) {
 	$post_tags = get_the_tags();
 
 	if ( ! empty( $post_tags ) ) {
@@ -217,7 +217,7 @@ function vanguard_tags_list( $placeholder = '' ) {
 
 }
 
-function vanguard_categories_list( $placeholder = '' ) {
+function monivo_categories_list( $placeholder = '' ) {
 	$categories = get_the_category();
 
 	if ( ! empty( $categories ) ) {
@@ -236,7 +236,7 @@ function vanguard_categories_list( $placeholder = '' ) {
 	}
 }
 
-function vanguard_print_archive_entry_class( $class = '' ) {
+function monivo_print_archive_entry_class( $class = '' ) {
 
 	$classes = array( 'post-list-item', 'h-col-xs-12', 'space-bottom' );
 	$classes = array_merge( $classes, explode( ' ', $class ) );

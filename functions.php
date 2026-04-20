@@ -40,7 +40,7 @@ use Kubio\Theme\Theme;
 require_once get_template_directory() . '/vendor/autoload.php';
 require_once __DIR__ . '/inc/safari-polyfills.php';
 
-function vanguard_register_components( $components ) {
+function monivo_register_components( $components ) {
 	$namespace = 'ColibriWP\\Theme\\Components';
 
 	$components = array_merge(
@@ -96,7 +96,7 @@ function vanguard_register_components( $components ) {
 	return $components;
 }
 
-Hooks::prefixed_add_filter( 'components', 'vanguard_register_components', 20 );
+Hooks::prefixed_add_filter( 'components', 'monivo_register_components', 20 );
 Theme::load(
 	array(
 		'themeBaseRelativePath' => '',
@@ -107,16 +107,16 @@ Theme::load(
 /**
  * @return Theme
  */
-function vanguard_theme() {
+function monivo_theme() {
 	return Theme::getInstance();
 }
 
-function vanguard_assets() {
-	return vanguard_theme()->getAssetsManager();
+function monivo_assets() {
+	return monivo_theme()->getAssetsManager();
 }
 
 
-vanguard_theme()
+monivo_theme()
 	->add_theme_support( 'automatic-feed-links' )
 	->add_theme_support( 'title-tag' )
 	->add_theme_support( 'post-thumbnails' )
@@ -131,35 +131,35 @@ vanguard_theme()
 	);
 
 add_action('after_setup_theme', function() {
-    vanguard_theme()->register_menus(
+    monivo_theme()->register_menus(
         array(
-            'header-menu' => esc_html__( 'Header Menu', 'vanguard' ),
-            'footer-menu' => esc_html__( 'Footer Menu', 'vanguard' ),
+            'header-menu' => esc_html__( 'Header Menu', 'monivo' ),
+            'footer-menu' => esc_html__( 'Footer Menu', 'monivo' ),
         )
     );
 }, 1);
 
 if ( ! apply_filters( 'kubio_is_enabled', false ) ) {
-	vanguard_assets()
+	monivo_assets()
 		->registerTemplateScript(
-			'vanguard-theme',
+			'monivo-theme',
 			'/theme/theme.js',
 			array( 'jquery', 'jquery-effects-slide', 'jquery-effects-core' )
 		)
-		->registerStylesheet( 'vanguard-theme', '/theme/theme.css' );
-	vanguard_assets()->loadLocalGoogleFonts();
+		->registerStylesheet( 'monivo-theme', '/theme/theme.css' );
+	monivo_assets()->loadLocalGoogleFonts();
 	//	foreach ( Defaults::get( 'fonts', array() ) as $family => $variants ) {
-	//		vanguard_assets()->addGoogleFont( $family, $variants );
+	//		monivo_assets()->addGoogleFont( $family, $variants );
 	//	}
 
-	add_action( 'wp_enqueue_scripts', 'vanguard_print_color_scheme', 0 );
+	add_action( 'wp_enqueue_scripts', 'monivo_print_color_scheme', 0 );
 } else {
-	vanguard_assets()
-		->registerStyle( 'vanguard-theme', vanguard_assets()->getBaseURL() . '/theme/fse-base-style.css' );
+	monivo_assets()
+		->registerStyle( 'monivo-theme', monivo_assets()->getBaseURL() . '/theme/fse-base-style.css' );
 	Hooks::prefixed_add_filter( 'skip_google_fonts', '__return_true' );
 }
 
-function vanguard_theme_add_woocommerce_support() {
+function monivo_theme_add_woocommerce_support() {
 	add_theme_support(
 		'woocommerce',
 		array(
@@ -177,10 +177,10 @@ function vanguard_theme_add_woocommerce_support() {
 	add_theme_support( 'kubio-woocommerce' );
 }
 
-add_action( 'after_setup_theme', 'vanguard_theme_add_woocommerce_support' );
+add_action( 'after_setup_theme', 'monivo_theme_add_woocommerce_support' );
 
-add_filter( 'kubio/activation/after_activation_redirect_url', 'vanguard_after_activation_redirect_url' );
-function vanguard_after_activation_redirect_url( $url ) {
+add_filter( 'kubio/activation/after_activation_redirect_url', 'monivo_after_activation_redirect_url' );
+function monivo_after_activation_redirect_url( $url ) {
 	if ( Flags::get( 'start_source', false ) == 'notice-homepage' ) {
 		$url = add_query_arg(
 			array(
@@ -221,7 +221,7 @@ Hooks::add_wp_ajax(
 	}
 );
 
-function vanguard_get_builder_plugin_slug() {
+function monivo_get_builder_plugin_slug() {
 
 	if ( ! function_exists( 'get_plugins' ) ) {
 		require_once ABSPATH . 'wp-admin/includes/plugin.php';
@@ -236,12 +236,12 @@ function vanguard_get_builder_plugin_slug() {
 	return 'kubio';
 }
 
-function vanguard_theme_plugins( $plugins ) {
+function monivo_theme_plugins( $plugins ) {
 
-	$plugin_slug = vanguard_get_builder_plugin_slug();
+	$plugin_slug = monivo_get_builder_plugin_slug();
 
 	$plugins[ $plugin_slug ] = array(
-		'name'        => $plugin_slug === 'kubio-pro' ? __( 'Kubio PRO', 'vanguard' ) : __( 'Kubio', 'vanguard' ),
+		'name'        => $plugin_slug === 'kubio-pro' ? __( 'Kubio PRO', 'monivo' ) : __( 'Kubio', 'monivo' ),
 		'description' => \ColibriWP\Theme\Translations::translate( 'page_builder_plugin_description' ),
 		'plugin_path' => $plugin_slug . '/plugin.php',
 	);
@@ -249,7 +249,7 @@ function vanguard_theme_plugins( $plugins ) {
 	return $plugins;
 }
 
-Hooks::prefixed_add_filter( 'theme_plugins', 'vanguard_theme_plugins' );
+Hooks::prefixed_add_filter( 'theme_plugins', 'monivo_theme_plugins' );
 
 
 add_filter(
@@ -291,7 +291,7 @@ Hooks::prefixed_add_action(
 	'after_plugin_activated',
 	function ( $slug ) {
 
-		if ( $slug === vanguard_get_builder_plugin_slug() ) {
+		if ( $slug === monivo_get_builder_plugin_slug() ) {
 			$hash = uniqid( 'activate-' );
 
 			Flags::set( 'activation-hash', $hash );
@@ -347,8 +347,8 @@ add_action(
 							<?php
 							echo esc_html(
 								sprintf(
-									__( '%s design has been successfully imported!', 'vanguard' ),
-									vanguard_theme()->getName()
+									__( '%s design has been successfully imported!', 'monivo' ),
+									monivo_theme()->getName()
 								)
 							);
 							?>
@@ -357,8 +357,8 @@ add_action(
 							<?php
 							echo esc_html(
 								sprintf(
-									__( '%s design has been successfully imported! You can take a look at your new design or start editing it', 'vanguard' ),
-									vanguard_theme()->getName()
+									__( '%s design has been successfully imported! You can take a look at your new design or start editing it', 'monivo' ),
+									monivo_theme()->getName()
 								)
 							);
 							?>
@@ -366,7 +366,7 @@ add_action(
                     </div>
                     <div class="button imported-view-site-button">
                         <a href="<?php echo esc_url( site_url() ); ?>">
-							<?php echo esc_html( __( 'View site', 'vanguard' ) ); ?>
+							<?php echo esc_html( __( 'View site', 'monivo' ) ); ?>
                         </a>
 
                     </div>
@@ -383,21 +383,21 @@ add_filter( 'kubio/enable_try_online', '__return_true' );
 add_filter( 'kubio/show-supplementary-upgrade-to-pro', '__return_true' );
 add_filter( 'kubio/enable_ai_capabilities', '__return_true' );
 
-function vanguard_try_online_url() {
+function monivo_try_online_url() {
 	return 'https://kubiobuilder.com/go/try-theme/' . get_template();
 }
 
-add_filter( 'kubio/editor-try-online/url', 'vanguard_try_online_url', 10 );
+add_filter( 'kubio/editor-try-online/url', 'monivo_try_online_url', 10 );
 
-function vanguard_render_header_style() {
+function monivo_render_header_style() {
 
 	?>
     <base target="_top">
 	<?php
 
-	vanguard_theme()->get( 'css' )->render();
+	monivo_theme()->get( 'css' )->render();
 }
-add_action( 'wp_head', 'vanguard_render_header_style', 100 );
+add_action( 'wp_head', 'monivo_render_header_style', 100 );
 
 
 add_filter(

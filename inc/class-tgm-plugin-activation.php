@@ -323,94 +323,94 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 			// Load class strings.
 			$this->strings = array(
-				'page_title'                      => __( 'Install Required Plugins', 'vanguard' ),
-				'menu_title'                      => __( 'Install Plugins', 'vanguard' ),
+				'page_title'                      => __( 'Install Required Plugins', 'monivo' ),
+				'menu_title'                      => __( 'Install Plugins', 'monivo' ),
 				/* translators: %s: plugin name. */
-				'installing'                      => __( 'Installing Plugin: %s', 'vanguard' ),
+				'installing'                      => __( 'Installing Plugin: %s', 'monivo' ),
 				/* translators: %s: plugin name. */
-				'updating'                        => __( 'Updating Plugin: %s', 'vanguard' ),
-				'oops'                            => __( 'Something went wrong with the plugin API.', 'vanguard' ),
+				'updating'                        => __( 'Updating Plugin: %s', 'monivo' ),
+				'oops'                            => __( 'Something went wrong with the plugin API.', 'monivo' ),
 				'notice_can_install_required'     => _n_noop(
 				/* translators: 1: plugin name(s). */
 					'This theme requires the following plugin: %1$s.',
 					'This theme requires the following plugins: %1$s.',
-					'vanguard'
+					'monivo'
 				),
 				'notice_can_install_recommended'  => _n_noop(
 				/* translators: 1: plugin name(s). */
 					'This theme recommends the following plugin: %1$s.',
 					'This theme recommends the following plugins: %1$s.',
-					'vanguard'
+					'monivo'
 				),
 				'notice_ask_to_update'            => _n_noop(
 				/* translators: 1: plugin name(s). */
 					'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
 					'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
-					'vanguard'
+					'monivo'
 				),
 				'notice_ask_to_update_maybe'      => _n_noop(
 				/* translators: 1: plugin name(s). */
 					'There is an update available for: %1$s.',
 					'There are updates available for the following plugins: %1$s.',
-					'vanguard'
+					'monivo'
 				),
 				'notice_can_activate_required'    => _n_noop(
 				/* translators: 1: plugin name(s). */
 					'The following required plugin is currently inactive: %1$s.',
 					'The following required plugins are currently inactive: %1$s.',
-					'vanguard'
+					'monivo'
 				),
 				'notice_can_activate_recommended' => _n_noop(
 				/* translators: 1: plugin name(s). */
 					'The following recommended plugin is currently inactive: %1$s.',
 					'The following recommended plugins are currently inactive: %1$s.',
-					'vanguard'
+					'monivo'
 				),
 				'install_link'                    => _n_noop(
 					'Begin installing plugin',
 					'Begin installing plugins',
-					'vanguard'
+					'monivo'
 				),
 				'update_link'                     => _n_noop(
 					'Begin updating plugin',
 					'Begin updating plugins',
-					'vanguard'
+					'monivo'
 				),
 				'activate_link'                   => _n_noop(
 					'Begin activating plugin',
 					'Begin activating plugins',
-					'vanguard'
+					'monivo'
 				),
-				'return'                          => __( 'Return to Required Plugins Installer', 'vanguard' ),
-				'dashboard'                       => __( 'Return to the Dashboard', 'vanguard' ),
-				'plugin_activated'                => __( 'Plugin activated successfully.', 'vanguard' ),
+				'return'                          => __( 'Return to Required Plugins Installer', 'monivo' ),
+				'dashboard'                       => __( 'Return to the Dashboard', 'monivo' ),
+				'plugin_activated'                => __( 'Plugin activated successfully.', 'monivo' ),
 				'activated_successfully'          => __(
 					'The following plugin was activated successfully:',
-					'vanguard'
+					'monivo'
 				),
 				/* translators: 1: plugin name. */
 				'plugin_already_active'           => __(
 					'No action taken. Plugin %1$s was already active.',
-					'vanguard'
+					'monivo'
 				),
 				/* translators: 1: plugin name. */
 				'plugin_needs_higher_version'     => __(
 					'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.',
-					'vanguard'
+					'monivo'
 				),
 				/* translators: 1: dashboard link. */
 				'complete'                        => __(
 					'All plugins installed and activated successfully. %1$s',
-					'vanguard'
+					'monivo'
 				),
-				'dismiss'                         => __( 'Dismiss this notice', 'vanguard' ),
+				'dismiss'                         => __( 'Dismiss this notice', 'monivo' ),
 				'notice_cannot_install_activate'  => __(
 					'There are one or more required or recommended plugins to install, update or activate.',
-					'vanguard'
+					'monivo'
 				),
 				'contact_admin'                   => __(
 					'Please contact the administrator of this site for help.',
-					'vanguard'
+					'monivo'
 				),
 			);
 
@@ -543,8 +543,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			$actions['update'] = sprintf(
 				'<a href="%1$s" title="%2$s" class="edit">%3$s</a>',
 				esc_url( $this->get_tgmpa_status_url( 'update' ) ),
-				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'vanguard' ),
-				esc_html__( 'Update Required', 'vanguard' )
+				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'monivo' ),
+				esc_html__( 'Update Required', 'monivo' )
 			);
 
 			return $actions;
@@ -872,7 +872,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 						esc_html( $this->strings['complete'] ),
 						'<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__(
 							'Return to the Dashboard',
-							'vanguard'
+							'monivo'
 						) . '</a>'
 					), '</p>';
 					echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
@@ -985,10 +985,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 							'rename_failed',
 							esc_html__(
 								'The remote plugin package does not contain a folder with the desired slug and renaming did not work.',
-								'vanguard'
+								'monivo'
 							) . ' ' . esc_html__(
 								'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.',
-								'vanguard'
+								'monivo'
 							),
 							array(
 								'found'    => $subdir_name,
@@ -1001,10 +1001,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 						'packaged_wrong',
 						esc_html__(
 							'The remote plugin package consists of more than one file, but the files are not packaged in a folder.',
-							'vanguard'
+							'monivo'
 						) . ' ' . esc_html__(
 							'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.',
-							'vanguard'
+							'monivo'
 						),
 						array(
 							'found'    => $subdir_name,
@@ -1211,13 +1211,13 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 						) . ' ' . esc_html_x(
 							'and',
 							'plugin A *and* plugin B',
-							'vanguard'
+							'monivo'
 						) . ' ' . $last_plugin );
 
 						$rendered .= sprintf(
 							$line_template,
 							sprintf(
-								translate_nooped_plural( $this->strings[ $type ], $count, 'vanguard' ),
+								translate_nooped_plural( $this->strings[ $type ], $count, 'monivo' ),
 								$imploded,
 								$count
 							)
@@ -1283,14 +1283,14 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				if ( $install_count > 0 ) {
 					$action_links['install'] = sprintf(
 						$link_template,
-						translate_nooped_plural( $this->strings['install_link'], $install_count, 'vanguard' ),
+						translate_nooped_plural( $this->strings['install_link'], $install_count, 'monivo' ),
 						esc_url( $this->get_tgmpa_status_url( 'install' ) )
 					);
 				}
 				if ( $update_count > 0 ) {
 					$action_links['update'] = sprintf(
 						$link_template,
-						translate_nooped_plural( $this->strings['update_link'], $update_count, 'vanguard' ),
+						translate_nooped_plural( $this->strings['update_link'], $update_count, 'monivo' ),
 						esc_url( $this->get_tgmpa_status_url( 'update' ) )
 					);
 				}
@@ -1299,7 +1299,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			if ( current_user_can( 'activate_plugins' ) && $activate_count > 0 ) {
 				$action_links['activate'] = sprintf(
 					$link_template,
-					translate_nooped_plural( $this->strings['activate_link'], $activate_count, 'vanguard' ),
+					translate_nooped_plural( $this->strings['activate_link'], $activate_count, 'monivo' ),
 					esc_url( $this->get_tgmpa_status_url( 'activate' ) )
 				);
 			}
@@ -2100,7 +2100,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			esc_html(
 				sprintf(
 				/* translators: %s: version number */
-					__( 'TGMPA v%s', 'vanguard' ),
+					__( 'TGMPA v%s', 'monivo' ),
 					self::TGMPA_VERSION
 				)
 			),
@@ -2404,10 +2404,10 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		protected function get_plugin_advise_type_text( $required ) {
 			if ( true === $required ) {
-				return __( 'Required', 'vanguard' );
+				return __( 'Required', 'monivo' );
 			}
 
-			return __( 'Recommended', 'vanguard' );
+			return __( 'Recommended', 'monivo' );
 		}
 
 		/**
@@ -2423,13 +2423,13 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			switch ( $type ) {
 				case 'repo':
-					$string = __( 'WordPress Repository', 'vanguard' );
+					$string = __( 'WordPress Repository', 'monivo' );
 					break;
 				case 'external':
-					$string = __( 'External Source', 'vanguard' );
+					$string = __( 'External Source', 'monivo' );
 					break;
 				case 'bundled':
-					$string = __( 'Pre-Packaged', 'vanguard' );
+					$string = __( 'Pre-Packaged', 'monivo' );
 					break;
 			}
 
@@ -2446,25 +2446,25 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		protected function get_plugin_status_text( $slug ) {
 			if ( ! $this->tgmpa->is_plugin_installed( $slug ) ) {
-				return __( 'Not Installed', 'vanguard' );
+				return __( 'Not Installed', 'monivo' );
 			}
 
 			if ( ! $this->tgmpa->is_plugin_active( $slug ) ) {
-				$install_status = __( 'Installed But Not Activated', 'vanguard' );
+				$install_status = __( 'Installed But Not Activated', 'monivo' );
 			} else {
-				$install_status = __( 'Active', 'vanguard' );
+				$install_status = __( 'Active', 'monivo' );
 			}
 
 			$update_status = '';
 
 			if ( $this->tgmpa->does_plugin_require_update( $slug ) && false === $this->tgmpa->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Required Update not Available', 'vanguard' );
+				$update_status = __( 'Required Update not Available', 'monivo' );
 
 			} elseif ( $this->tgmpa->does_plugin_require_update( $slug ) ) {
-				$update_status = __( 'Requires Update', 'vanguard' );
+				$update_status = __( 'Requires Update', 'monivo' );
 
 			} elseif ( false !== $this->tgmpa->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Update recommended', 'vanguard' );
+				$update_status = __( 'Update recommended', 'monivo' );
 			}
 
 			if ( '' === $update_status ) {
@@ -2473,7 +2473,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			return sprintf(
 			/* translators: 1: install status, 2: update status */
-				_x( '%1$s, %2$s', 'Install/Update Status', 'vanguard' ),
+				_x( '%1$s, %2$s', 'Install/Update Status', 'monivo' ),
 				$install_status,
 				$update_status
 			);
@@ -2523,7 +2523,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 							'All <span class="count">(%s)</span>',
 							$count,
 							'plugins',
-							'vanguard'
+							'monivo'
 						);
 						break;
 					case 'install':
@@ -2532,7 +2532,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 							'To Install <span class="count">(%s)</span>',
 							'To Install <span class="count">(%s)</span>',
 							$count,
-							'vanguard'
+							'monivo'
 						);
 						break;
 					case 'update':
@@ -2541,7 +2541,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 							'Update Available <span class="count">(%s)</span>',
 							'Update Available <span class="count">(%s)</span>',
 							$count,
-							'vanguard'
+							'monivo'
 						);
 						break;
 					case 'activate':
@@ -2550,7 +2550,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 							'To Activate <span class="count">(%s)</span>',
 							'To Activate <span class="count">(%s)</span>',
 							$count,
-							'vanguard'
+							'monivo'
 						);
 						break;
 					default:
@@ -2636,7 +2636,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				$installed = ! empty( $item['installed_version'] ) ? $item['installed_version'] : _x(
 					'unknown',
 					'as in: "version nr unknown"',
-					'vanguard'
+					'monivo'
 				);
 
 				$color = '';
@@ -2647,7 +2647,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				$output[] = sprintf(
 					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __(
 						'Installed version:',
-						'vanguard'
+						'monivo'
 					) . '</p>',
 					$color,
 					$installed
@@ -2658,7 +2658,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				$output[] = sprintf(
 					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . __(
 						'Minimum required version:',
-						'vanguard'
+						'monivo'
 					) . '</p>',
 					$item['minimum_version']
 				);
@@ -2677,7 +2677,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				$output[] = sprintf(
 					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __(
 						'Available version:',
-						'vanguard'
+						'monivo'
 					) . '</p>',
 					$color,
 					$item['available_version']
@@ -2703,10 +2703,10 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		public function no_items() {
 			echo esc_html__(
 				'No plugins to install, update or activate.',
-				'vanguard'
+				'monivo'
 			) . ' <a href="' . esc_url( self_admin_url() ) . '"> ' . esc_html__(
 				'Return to the Dashboard',
-				'vanguard'
+				'monivo'
 			) . '</a>';
 			echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 		}
@@ -2720,14 +2720,14 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		public function get_columns() {
 			$columns = array(
 				'cb'     => '<input type="checkbox" />',
-				'plugin' => __( 'Plugin', 'vanguard' ),
-				'source' => __( 'Source', 'vanguard' ),
-				'type'   => __( 'Type', 'vanguard' ),
+				'plugin' => __( 'Plugin', 'monivo' ),
+				'source' => __( 'Source', 'monivo' ),
+				'type'   => __( 'Type', 'monivo' ),
 			);
 
 			if ( 'all' === $this->view_context || 'update' === $this->view_context ) {
-				$columns['version'] = __( 'Version', 'vanguard' );
-				$columns['status']  = __( 'Status', 'vanguard' );
+				$columns['version'] = __( 'Version', 'monivo' );
+				$columns['status']  = __( 'Status', 'monivo' );
 			}
 
 			return apply_filters( 'tgmpa_table_columns', $columns );
@@ -2774,18 +2774,18 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 			// Display the 'Install' action link if the plugin is not yet available.
 			if ( ! $this->tgmpa->is_plugin_installed( $item['slug'] ) ) {
 				/* translators: %2$s: plugin name in screen reader markup */
-				$actions['install'] = __( 'Install %2$s', 'vanguard' );
+				$actions['install'] = __( 'Install %2$s', 'monivo' );
 			} else {
 				// Display the 'Update' action link if an update is available and WP complies with plugin minimum.
 				if ( false !== $this->tgmpa->does_plugin_have_update( $item['slug'] ) && $this->tgmpa->can_plugin_update( $item['slug'] ) ) {
 					/* translators: %2$s: plugin name in screen reader markup */
-					$actions['update'] = __( 'Update %2$s', 'vanguard' );
+					$actions['update'] = __( 'Update %2$s', 'monivo' );
 				}
 
 				// Display the 'Activate' action link, but only if the plugin meets the minimum version.
 				if ( $this->tgmpa->can_plugin_activate( $item['slug'] ) ) {
 					/* translators: %2$s: plugin name in screen reader markup */
-					$actions['activate'] = __( 'Activate %2$s', 'vanguard' );
+					$actions['activate'] = __( 'Activate %2$s', 'monivo' );
 				}
 			}
 
@@ -2862,7 +2862,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				<tr class="plugin-update-tr">
 					<td colspan="', absint( $this->get_column_count() ), '" class="plugin-update colspanchange">
 						<div class="update-message">',
-			esc_html__( 'Upgrade message from the plugin author:', 'vanguard' ),
+			esc_html__( 'Upgrade message from the plugin author:', 'monivo' ),
 			' <strong>', wp_kses_data( $item['upgrade_notice'] ), '</strong>
 						</div>
 					</td>
@@ -2894,16 +2894,16 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			if ( 'update' !== $this->view_context && 'activate' !== $this->view_context ) {
 				if ( current_user_can( 'install_plugins' ) ) {
-					$actions['tgmpa-bulk-install'] = __( 'Install', 'vanguard' );
+					$actions['tgmpa-bulk-install'] = __( 'Install', 'monivo' );
 				}
 			}
 
 			if ( 'install' !== $this->view_context ) {
 				if ( current_user_can( 'update_plugins' ) ) {
-					$actions['tgmpa-bulk-update'] = __( 'Update', 'vanguard' );
+					$actions['tgmpa-bulk-update'] = __( 'Update', 'monivo' );
 				}
 				if ( current_user_can( 'activate_plugins' ) ) {
-					$actions['tgmpa-bulk-activate'] = __( 'Activate', 'vanguard' );
+					$actions['tgmpa-bulk-activate'] = __( 'Activate', 'monivo' );
 				}
 			}
 
@@ -2934,9 +2934,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				// Did user actually select any plugins to install/update ?
 				if ( empty( $_POST['plugin'] ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins were selected to be installed. No action taken.', 'vanguard' );
+						$message = __( 'No plugins were selected to be installed. No action taken.', 'monivo' );
 					} else {
-						$message = __( 'No plugins were selected to be updated. No action taken.', 'vanguard' );
+						$message = __( 'No plugins were selected to be updated. No action taken.', 'monivo' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -2977,9 +2977,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				// No need to proceed further if we have no plugins to handle.
 				if ( empty( $plugins_to_install ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins are available to be installed at this time.', 'vanguard' );
+						$message = __( 'No plugins are available to be installed at this time.', 'monivo' );
 					} else {
-						$message = __( 'No plugins are available to be updated at this time.', 'vanguard' );
+						$message = __( 'No plugins are available to be updated at this time.', 'monivo' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -3093,7 +3093,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				if ( empty( $_POST['plugin'] ) ) {
 					echo '<div id="message" class="error"><p>', esc_html__(
 						'No plugins were selected to be activated. No action taken.',
-						'vanguard'
+						'monivo'
 					), '</p></div>';
 
 					return false;
@@ -3122,7 +3122,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				if ( empty( $plugins_to_activate ) ) {
 					echo '<div id="message" class="error"><p>', esc_html__(
 						'No plugins are available to be activated at this time.',
-						'vanguard'
+						'monivo'
 					), '</p></div>';
 
 					return false;
@@ -3143,7 +3143,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 					) . ' ' . esc_html_x(
 						'and',
 						'plugin A *and* plugin B',
-						'vanguard'
+						'monivo'
 					) . ' ' . $last_plugin );
 
 					printf( // WPCS: xss ok.
@@ -3153,7 +3153,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 								'The following plugin was activated successfully:',
 								'The following plugins were activated successfully:',
 								$count,
-								'vanguard'
+								'monivo'
 							)
 						),
 						$imploded
@@ -3366,8 +3366,8 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 					 * @since 2.2.0
 					 */
 					public function activate_strings() {
-						$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'vanguard' );
-						$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'vanguard' );
+						$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'monivo' );
+						$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'monivo' );
 					}
 
 					/**
@@ -3717,71 +3717,71 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 							/* translators: 1: plugin name, 2: action number 3: total number of actions. */
 							$this->upgrader->strings['skin_before_update_header'] = __(
 								'Updating Plugin %1$s (%2$d/%3$d)',
-								'vanguard'
+								'monivo'
 							);
 						} else {
 							/* translators: 1: plugin name, 2: error message. */
 							$this->upgrader->strings['skin_update_failed_error'] = __(
 								'An error occurred while installing %1$s: <strong>%2$s</strong>.',
-								'vanguard'
+								'monivo'
 							);
 							/* translators: 1: plugin name. */
 							$this->upgrader->strings['skin_update_failed'] = __(
 								'The installation of %1$s failed.',
-								'vanguard'
+								'monivo'
 							);
 
 							if ( $this->tgmpa->is_automatic ) {
 								// Automatic activation strings.
 								$this->upgrader->strings['skin_upgrade_start'] = __(
 									'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.',
-									'vanguard'
+									'monivo'
 								);
 								/* translators: 1: plugin name. */
 								$this->upgrader->strings['skin_update_successful'] = __(
 									'%1$s installed and activated successfully.',
-									'vanguard'
+									'monivo'
 								) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__(
 									'Show Details',
-									'vanguard'
+									'monivo'
 								) . '</span><span class="hidden">' . esc_html__(
 									'Hide Details',
-									'vanguard'
+									'monivo'
 								) . '</span>.</a>';
 								$this->upgrader->strings['skin_upgrade_end']       = __(
 									'All installations and activations have been completed.',
-									'vanguard'
+									'monivo'
 								);
 								/* translators: 1: plugin name, 2: action number 3: total number of actions. */
 								$this->upgrader->strings['skin_before_update_header'] = __(
 									'Installing and Activating Plugin %1$s (%2$d/%3$d)',
-									'vanguard'
+									'monivo'
 								);
 							} else {
 								// Default installation strings.
 								$this->upgrader->strings['skin_upgrade_start'] = __(
 									'The installation process is starting. This process may take a while on some hosts, so please be patient.',
-									'vanguard'
+									'monivo'
 								);
 								/* translators: 1: plugin name. */
 								$this->upgrader->strings['skin_update_successful'] = esc_html__(
 									'%1$s installed successfully.',
-									'vanguard'
+									'monivo'
 								) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__(
 									'Show Details',
-									'vanguard'
+									'monivo'
 								) . '</span><span class="hidden">' . esc_html__(
 									'Hide Details',
-									'vanguard'
+									'monivo'
 								) . '</span>.</a>';
 								$this->upgrader->strings['skin_upgrade_end']       = __(
 									'All installations have been completed.',
-									'vanguard'
+									'monivo'
 								);
 								/* translators: 1: plugin name, 2: action number 3: total number of actions. */
 								$this->upgrader->strings['skin_before_update_header'] = __(
 									'Installing Plugin %1$s (%2$d/%3$d)',
-									'vanguard'
+									'monivo'
 								);
 							}
 						}
@@ -3844,7 +3844,7 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 								esc_html( $this->tgmpa->strings['complete'] ),
 								'<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__(
 									'Return to the Dashboard',
-									'vanguard'
+									'monivo'
 								) . '</a>'
 							);
 						} else {
