@@ -20,7 +20,7 @@
 	</rule>
 	<!-- <rule ref="WordPress-Docs"/> -->
 	<rule ref="WordPress.WP.I18n" />
-	<config name="text_domain" value="monivo" />
+	<config name="text_domain" value="vanguard" />
 	<rule ref="VariableAnalysis.CodeAnalysis.VariableAnalysis">
 		<properties>
 			<property name="allowUnusedParametersBeforeUsed" value="true" />

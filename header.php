@@ -15,7 +15,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 }
 ?>
 <div class="site" id="page-top">
-	<?php monivo_theme()->get( 'header' )->render(); ?>
+	<?php vanguard_theme()->get( 'header' )->render(); ?>
 
 
 

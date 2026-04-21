@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project default="default" name="Monivo Theme">
+<project default="default" name="Vanguard Theme">
 	<property description="System environment variables" environment="env" />
 	<!-- PROPERTIES -->
 	<property name="build_number" value="1.0.${env.BUILD_NUMBER}" />
-	<property name="zip_root_folder" value="monivo" />
+	<property name="zip_root_folder" value="vanguard" />
 	<property name="source_dir" value="${env.WORKSPACE}/repo/theme" />
 	<property name="build_dir" value="${env.WORKSPACE}/build" />
 	<property name="build_compose" value="${env.WORKSPACE}/compose" />

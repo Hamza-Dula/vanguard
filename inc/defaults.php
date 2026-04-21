@@ -1,5 +1,5 @@
 <?php
-$monivo_theme_svg_icons = array(
+$vanguard_theme_svg_icons = array(
 	'fort-awesome'         => array(
 		'name'    => 'font-awesome/fort-awesome',
 		'content' => '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="fort-awesome" viewBox="0 0 1792 1896.0833"><path d="M640 1008V784q0-16-16-16h-96q-16 0-16 16v224q0 16 16 16h96q16 0 16-16zm512 0V784q0-16-16-16h-96q-16 0-16 16v224q0 16 16 16h96q16 0 16-16zm512 32v752h-640v-320q0-80-56-136t-136-56-136 56-56 136v320H0v-752q0-16 16-16h96q16 0 16 16v112h128V528q0-16 16-16h96q16 0 16 16v112h128V528q0-16 16-16h96q16 0 16 16v112h128V528q0-6 2.5-9.5t8.5-5 9.5-2 11.5 0 9 .5V121q-32-15-32-50 0-23 16.5-39T832 16t38.5 16T887 71q0 35-32 50v17q45-10 83-10 21 0 59.5 7.5t54.5 7.5q17 0 47-7.5t37-7.5q16 0 16 16v210q0 15-35 21.5t-62 6.5q-18 0-54.5-7.5T945 367q-40 0-90 12v133q1 0 9-.5t11.5 0 9.5 2 8.5 5 2.5 9.5v112h128V528q0-16 16-16h96q16 0 16 16v112h128V528q0-16 16-16h96q16 0 16 16v624h128v-112q0-16 16-16h96q16 0 16 16z"/></svg>',
@@ -142,7 +142,7 @@ $monivo_theme_svg_icons = array(
 	),
 );
 
-$monivo_theme_divider_style = array(
+$vanguard_theme_divider_style = array(
 	'small-waves'  => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 9.82" preserveAspectRatio="xMidYMax slice"><path d="M0,.1V5.2H.3A306.66,306.66,0,0,0,56.9,9.8h.2c28.3,0,42.7-2.3,56.6-4.6s28-4.5,56-4.5h3.7a347.74,347.74,0,0,1,39.5,2.6c4.5.6,8.7,1.3,12.8,1.9l2,.3c3.1.6,6.5,1.1,10.1,1.5,11,1.5,24.2,2.7,44.7,2.7H284a318.74,318.74,0,0,0,55.2-4.5C353,3,367.3.7,395.3.7S437.6,3,451.4,5.2c14.2,2.3,28.6,4.6,56.9,4.6h.2c28.3,0,42.7-2.3,56.6-4.6S593.2.7,621.2.7h12.1a14.77,14.77,0,0,1,2.1.1h.1a291.82,291.82,0,0,1,41.7,4.3c13.9,2.3,28.4,4.6,56.6,4.6h.2c28.4,0,42.8-2.3,56.6-4.6S818.7.6,846.7.6,889,2.9,902.8,5.1A317.37,317.37,0,0,0,957,9.8h3.1c28.3,0,42.7-2.3,56.6-4.6S1044.8.7,1072.8.7h1.8a339.45,339.45,0,0,1,45.1,3.1c3.2.5,6.2.9,9.2,1.4,13.9,2.2,28.4,4.6,56.7,4.6h.1c28.4,0,42.8-2.3,56.6-4.6S1270.4.7,1298.4.7s42.3,2.3,56.1,4.5a309.52,309.52,0,0,0,56.8,4.6h.1c28.4,0,42.8-2.3,56.6-4.6s28-4.5,56-4.5h3.7a349.49,349.49,0,0,1,39.6,2.6c4.5.6,8.7,1.3,12.8,1.9l2,.3c3.1.6,6.5,1.1,10.1,1.5,11,1.5,24.2,2.7,44.7,2.7h1.5a318.74,318.74,0,0,0,55.2-4.5C1707.4,3,1721.7.7,1749.7.7S1792,3,1805.8,5.2c14.3,2.3,28.7,4.6,57,4.6h.2c28.3,0,42.7-2.3,56.6-4.6a.6.6,0,0,0,.4-.1V0Z"/></svg>',
 	'tilt-flipped' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"> <path class="svg-white-bg" d="M 1000,0 H 0 v 100 z" /></svg>',
 	'tilt'         => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"> <path class="svg-white-bg" d="M-0 0L1000 0 1000 100z"/></svg>',
@@ -187,7 +187,7 @@ $header_gradients = array(
 		),
 );
 
-$monivo_gradients = array(
+$vanguard_gradients = array(
 	'night_fade'  =>
 		array(
 			'name'  => 'night_fade',
@@ -245,21 +245,21 @@ $monivo_gradients = array(
 
 );
 
-$monivo_title                         =  "Let's build this together";
-$monivo_subtitle                      =  "Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, lorem ipsum dolor sit amet, at mei dolore tritani in his nemore temporibus.";
-$monivo_theme_action_button           =  'Start your journey';
-$monivo_theme_action_button_secondary =  'Contact us';
+$vanguard_title                         =  "Let's build this together";
+$vanguard_subtitle                      =  "Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, lorem ipsum dolor sit amet, at mei dolore tritani in his nemore temporibus.";
+$vanguard_theme_action_button           =  'Start your journey';
+$vanguard_theme_action_button_secondary =  'Contact us';
 
 $defaults = array(
-	'default_icon'                      => $monivo_theme_svg_icons['fort-awesome'],
-	'icons'                             => $monivo_theme_svg_icons,
-	'divider_style'                     => $monivo_theme_divider_style,
-	'gradients'                         => $monivo_gradients,
+	'default_icon'                      => $vanguard_theme_svg_icons['fort-awesome'],
+	'icons'                             => $vanguard_theme_svg_icons,
+	'divider_style'                     => $vanguard_theme_divider_style,
+	'gradients'                         => $vanguard_gradients,
 
 	'assets_js_key'                     => 'kubioFrontendData',
 
-	'edit_this_text_in_customizer'      => $monivo_title,
-	'lorem_ipsum'                       => $monivo_subtitle,
+	'edit_this_text_in_customizer'      => $vanguard_title,
+	'lorem_ipsum'                       => $vanguard_subtitle,
 	
 	'front-header'                      => array(
 		'navigation'   => array(
@@ -310,13 +310,13 @@ $defaults = array(
 			),
 			'value' => array(
 				array(
-					'label'       => sprintf( $monivo_theme_action_button, 1 ),
+					'label'       => sprintf( $vanguard_theme_action_button, 1 ),
 					'url'         => '#',
 					'button_type' => '0',
 					'index'       => 0,
 				),
 				array(
-					'label'       => sprintf( $monivo_theme_action_button_secondary, 1 ),
+					'label'       => sprintf( $vanguard_theme_action_button_secondary, 1 ),
 					'url'         => '#',
 					'button_type' => '1',
 					'index'       => 1,
@@ -325,9 +325,9 @@ $defaults = array(
 		),
 		'title'        => array(
 			'show'  => true,
-			'value'      => $monivo_title,
+			'value'      => $vanguard_title,
 			'localProps' => array(
-				'content' => $monivo_title
+				'content' => $vanguard_title
 			),
 			'highlight' => array(
 				'enabled' => true,
@@ -343,9 +343,9 @@ $defaults = array(
 		),
 		'subtitle'     => array(
 			'show'  => true,
-			'value'      => $monivo_subtitle,
+			'value'      => $vanguard_subtitle,
 			'localProps' => array(
-				'content' => $monivo_subtitle
+				'content' => $vanguard_subtitle
 			),
 			'style' => array(
 				'descendants' => array(
@@ -368,7 +368,7 @@ $defaults = array(
 									'color'            => array(
 										'value' => 'rgb(5, 7, 11, 0.5)',
 									),
-									'gradient'         => $monivo_gradients['night_fade'],
+									'gradient'         => $vanguard_gradients['night_fade'],
 									'gradient_opacity' => 30,
 									'shape'            =>
 										array(
@@ -406,7 +406,7 @@ $defaults = array(
 								array(
 									'source'     => array(
 										'url'      =>  get_template_directory_uri() . '/resources/images/beach-landscape-sea-water-nature-sand-1061655-pxhere.com.jpg',
-										'gradient' => $monivo_gradients['night_fade'],
+										'gradient' => $vanguard_gradients['night_fade'],
 									),
 									'position'   => 'center center',
 									'size'       => 'cover',
@@ -495,22 +495,22 @@ $defaults = array(
 			'localProps' => array(
 				'iconList' => array(
 					array(
-						'icon'       => $monivo_theme_svg_icons['facebook-square-full'],
+						'icon'       => $vanguard_theme_svg_icons['facebook-square-full'],
 						'link_value' => '#',
 						'index'      => 0,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['twitter-x'],
+						'icon'       => $vanguard_theme_svg_icons['twitter-x'],
 						'link_value' => '#',
 						'index'      => 1,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['youtube'],
+						'icon'       => $vanguard_theme_svg_icons['youtube'],
 						'link_value' => '#',
 						'index'      => 2,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['vimeo'],
+						'icon'       => $vanguard_theme_svg_icons['vimeo'],
 						'link_value' => '#',
 						'index'      => 3,
 					),
@@ -522,19 +522,19 @@ $defaults = array(
 			'localProps' => array(
 				'iconList' => array(
 					array(
-						'icon'       => $monivo_theme_svg_icons['map-marker'],
+						'icon'       => $vanguard_theme_svg_icons['map-marker'],
 						'text'       => '123, Main Street, City, Country',
 						'link_value' => 'https://maps.google.com/',
 						'index'      => 0,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['phone'],
+						'icon'       => $vanguard_theme_svg_icons['phone'],
 						'text'       => '+1 234 567 890',
 						'link_value' => 'tel:+1 234 567 890',
 						'index'      => 0,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['envelope'],
+						'icon'       => $vanguard_theme_svg_icons['envelope'],
 						'text'       => 'email@example.com',
 						'link_value' => 'mailto:email@example.com',
 						'index'      => 1,
@@ -600,7 +600,7 @@ $defaults = array(
 									'color'            => array(
 										'value' => 'rgba(5, 7, 11, 0.5)',
 									),
-									'gradient'         => $monivo_gradients['night_fade'],
+									'gradient'         => $vanguard_gradients['night_fade'],
 									'gradient_opacity' => 30,
 									'shape'            =>
 										array(
@@ -638,7 +638,7 @@ $defaults = array(
 								array(
 									'source'     => array(
 										'url'      =>  get_template_directory_uri() . '/resources/images/beach-landscape-sea-water-nature-sand-1061655-pxhere.com.jpg',
-										'gradient' => $monivo_gradients['night_fade'],
+										'gradient' => $vanguard_gradients['night_fade'],
 									),
 									'position'   => 'center center',
 									'size'       => 'cover',
@@ -675,22 +675,22 @@ $defaults = array(
 			'localProps' => array(
 				'icons' => array(
 					array(
-						'icon'       => $monivo_theme_svg_icons['facebook-square-full'],
+						'icon'       => $vanguard_theme_svg_icons['facebook-square-full'],
 						'link_value' => '#',
 						'index'      => 0,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['whatsapp-square'],
+						'icon'       => $vanguard_theme_svg_icons['whatsapp-square'],
 						'link_value' => '#',
 						'index'      => 1,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['youtube'],
+						'icon'       => $vanguard_theme_svg_icons['youtube'],
 						'link_value' => '#',
 						'index'      => 2,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['whatsapp-square'],
+						'icon'       => $vanguard_theme_svg_icons['whatsapp-square'],
 						'link_value' => '#',
 						'index'      => 3,
 					),
@@ -702,19 +702,19 @@ $defaults = array(
 			'localProps' => array(
 				'iconList' => array(
 					array(
-						'icon'       => $monivo_theme_svg_icons['map-pin'],
+						'icon'       => $vanguard_theme_svg_icons['map-pin'],
 						'text'       => '1557 Frosty Lane, Binghamton, NY',
 						'link_value' => '#',
 						'index'      => 0,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['phone-square'],
+						'icon'       => $vanguard_theme_svg_icons['phone-square'],
 						'text'       => '+400 098 765 432',
 						'link_value' => '#',
 						'index'      => 1,
 					),
 					array(
-						'icon'       => $monivo_theme_svg_icons['envelope'],
+						'icon'       => $vanguard_theme_svg_icons['envelope'],
 						'text'       => 'email@example.com',
 						'link_value' => '#',
 						'index'      => 2,
